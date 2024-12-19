@@ -41,3 +41,17 @@ main{
     height: 300px ;
     object-fit: cover;
 }
+
+.link-padrao{
+    color: #fff;
+    transition: 0.5s;
+}
+.link-padrao:hover{
+    color: rgb(196, 196, 196);
+    zoom: 1.05;
+    transition: 0.5s;
+}
+
+.absoluto{
+    position: relative;
+}
