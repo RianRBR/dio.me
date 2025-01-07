@@ -1,4 +1,9 @@
 
+:root{
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #196c43;
+}
+
 .btn{
     --bs-btn-bg: #198754;
     --bs-btn-border-color: #146c43;
@@ -11,6 +16,9 @@
 
 main{
     margin-top: 86.89px;
+}
+section{
+    scroll-margin-top: 6rem;
 }
 
 .navbar-brand img { 
