@@ -79,6 +79,8 @@
 
 body{
     margin: auto ;
+    background-color: #020228;
+
 }
 
 .container-navegacao{
@@ -137,7 +139,6 @@ body{
     width: 100%;
     height: 250px;
     position: absolute;
-    bottom: 0;
     background: linear-gradient(0deg, var(--primary-color), transparent);
 }
 
@@ -176,9 +177,16 @@ h1{
     margin-bottom: 30px;
 }
 h2{
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-top: 40px;
     color: var(--text-color);
+}
+h3{
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: var(--text-color);
+
 }
 
 p{
@@ -236,8 +244,41 @@ hr{
     text-align: center;
     margin: auto;
 }
+
 .cards{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
     width: 100%;
-    height: auto;
+    height: 802px;
+    color: var(--text-color);
+    background: url('../assets/imagen/background-movies-series.png') no-repeat;
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
 }
 
+.container-card{
+    width: 1200px;
+    padding: 20px;
+}
+.cards-assinatura{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.card-compra{
+    width: 536px;
+    height: 600px;
+    padding: 40px 60px;
+    background: var(--card-bg-color);
+    display: flex;
+    border-radius: 10px;
+    margin-top: 40px;
+    
+}
