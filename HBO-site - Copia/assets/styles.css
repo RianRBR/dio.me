@@ -39,61 +39,6 @@
 
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
-}
-::-webkit-scrollbar-thumb {
-    background: var(--tertiary-color);
-    border-radius: 10px;
-}
-
-/* INICIO BREACKPOINTS */
-
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
-    .imagens-galeria {
-        grid-template-columns: 1fr;
-    }
-
-    .imagens-galeria img {
-        margin-top: 15px;
-    }
-}
-
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-    .imagens-galeria {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .imagens-galeria img {
-        margin-top: 20px;
-    }
-}
-
-/*// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { 
-
-}*/
-
-
-
-/* FIM BREACKPOINTS */
 
 
 @keyframes gradient{
@@ -440,95 +385,39 @@ hr{
     text-align: start;
 }
 
-.galeria {
+.galeria{
     text-align: center;
-    margin: 100px auto;
+    margin:100px auto;
     display: flex;
     flex-direction: column;
     max-width: 1214px;
-}
 
-.imagens-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+
+}
+.imagens-galeria{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row ;
     max-width: 1214px;
-    margin: 0 auto;
+    gap: 40px;
+    
+    
 }
 
-.imagens-galeria img {
-    width: 100%;
+.conteudo-img{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-img img{
+    margin-top: 60px;
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border: 2px solid transparent;
-    transition: transform 0.8s ease, border 0.8s ease, opacity 1s ease;
-    margin-top: 40px;
-}
-
-.imagens-galeria img:hover {
-    transform: scale(1.1);
-    border: 2px solid var(--secondary-color);
-    opacity: 0;
-    
-}
-
-.conteudo-img {
+    transition: transform 0.8s, background 0.8s, border 1s;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-    transition: opacity 1s ease, border 0.8s ease;
-    
 }
-
-.conteudo-img:hover {
-    border: 2px solid var(--secondary-color);
-    opacity: 1;
-    
-}
-
-/* HBO MAX */
-.conteudo-img:nth-child(1):hover {
-    background-image: url(/HBO-site/assets/imagen/hbo-hover_0.webp);
-    transition: opacity 1s ease;
-}
-/* MAX ORIGINALS */
-.conteudo-img:nth-child(2):hover {
-    background-image: url(/HBO-site/assets/imagen/MAX-Hover.webp);
-    transition: opacity 1s ease;
-}
-/* DC */
-.conteudo-img:nth-child(3):hover {
-    background-image: url(/HBO-site/assets/imagen/DC-Hover.webp);
-    transition: opacity 1s ease;
-}
-/* WARNER */
-.conteudo-img:nth-child(4):hover {
-    background-image: url(/HBO-site/assets/imagen/WB-Hover.webp);
-    transition: opacity 1s ease;
-}
-/* CARTOON */
-.conteudo-img:nth-child(5):hover {
-    background-image: url(/HBO-site/assets/imagen/CN-Hover.png);
-    transition: opacity 1s ease;
-}
-/* UEFA */
-.conteudo-img:nth-child(6):hover {
-    background-image: url(/HBO-site/assets/imagen/UCL-Hover.webp);
-    transition: opacity 1s ease;
-}
-
-
-.menu-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100px;
-}
-
-
 
 
