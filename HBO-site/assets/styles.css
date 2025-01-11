@@ -70,7 +70,9 @@
         justify-content: center;
 
     }
-
+    .plano-valor{
+        flex-direction: column;
+    }
 
 
     .imagens-galeria img {
