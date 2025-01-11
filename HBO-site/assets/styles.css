@@ -54,12 +54,12 @@
 
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (max-width: 576px) {
-    .menu{
+    .menu {
         gap: 20px;
         flex-direction: column !important;
     }
-    
-    
+
+
     .imagens-galeria {
         display: grid;
         grid-template-columns: 1fr !important;
@@ -71,7 +71,7 @@
 
     }
 
-    
+
 
     .imagens-galeria img {
         margin-top: 15px;
@@ -81,6 +81,18 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+    }
+
+    .cards-assinatura:has(.card-compra:nth-child(1):hover) .card-compra:nth-child(2) {
+        transform: rotateY(0) !important;
+        transition: 1s;
+
+    }
+
+    .cards-assinatura:has(.card-compra:nth-child(2):hover) .card-compra:nth-child(1) {
+        transform: rotateY(0) !important;
+        transition: 1s;
+
     }
 }
 
@@ -241,10 +253,11 @@ main {
 
 }
 
-.entrar{
+.entrar {
     transition: 1s;
 }
-.entrar:hover{
+
+.entrar:hover {
     transition: 1s;
     transform: scale(1.1);
     -webkit-text-stroke-color: var(--link-color);
@@ -257,6 +270,7 @@ main {
     border-radius: 20px;
     transition: 1s;
 }
+
 .btn-assinar:hover {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
@@ -502,7 +516,8 @@ hr {
     perspective-origin: top;
 
 }
-.cards-assinatura:nth-child(1):hover{
+
+.cards-assinatura:nth-child(1):hover {
     transform: rotateY(45deg);
 }
 
@@ -665,7 +680,8 @@ footer {
     padding: 10px 20px;
 
 }
-.menu-footer li{
+
+.menu-footer li {
     text-align: center;
 }
 
@@ -683,7 +699,7 @@ footer {
     color: var(--text-color);
     transition: 2s;
     -webkit-text-stroke-color: var(--secondary-color);
-    
+
 }
 
 .copyryght {
@@ -693,20 +709,19 @@ footer {
     color: var(--link-color);
     text-align: center;
 }
-.redes-sociais{
+
+.redes-sociais {
     margin-bottom: 40px;
 }
 
-.cards-assinatura:has(.card-compra:nth-child(1):hover)
-  .card-compra:nth-child(2) {
-  transform: rotateY(-45deg);
-  transition: 1s;
-  perspective: top;
+.cards-assinatura:has(.card-compra:nth-child(1):hover) .card-compra:nth-child(2) {
+    transform: rotateY(-45deg);
+    transition: 1s;
+
 }
 
-.cards-assinatura:has(.card-compra:nth-child(2):hover)
-  .card-compra:nth-child(1) {
-  transform: rotateY(45deg);
-  transition: 1s;
-  perspective: top;
-  }
+.cards-assinatura:has(.card-compra:nth-child(2):hover) .card-compra:nth-child(1) {
+    transform: rotateY(45deg);
+    transition: 1s;
+
+}
