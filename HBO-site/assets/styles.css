@@ -59,6 +59,17 @@
         flex-direction: column !important;
     }
 
+    .aplicavel{
+        margin-bottom: 150px !important;
+    }
+    .mega-banner{
+        height: 900px !important;
+    }
+    .mega-banner::after{
+        top: 800px !important;
+        right: 0px !important;
+        width: 110vw !important;
+    }
 
     .imagens-galeria {
         display: grid;
@@ -71,7 +82,7 @@
 
     }
     .plano-valor{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
 
@@ -311,6 +322,7 @@ main {
     width: 100vw;
     height: 100px;
     top: 700px;
+    right: 0;
     position: absolute;
     background: linear-gradient(0deg, var(--primary-color), transparent);
 }
