@@ -15,13 +15,13 @@ a*/
 /*Par ou Impar*/
 
 const numero = 27;
-const numeroPar = (numero % 2) === 0;
+const isnumeroPar = (numero % 2) === 0;
 
 
 if (numero === 0){
     console.log('Esse número é inválido')
 }
-else if (numeroPar) {
+else if (isnumeroPar) {
     console.log('Sou Par')
 }
 else{
