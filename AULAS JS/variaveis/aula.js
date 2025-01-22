@@ -39,12 +39,12 @@ const kmPorLitroGasolina = 15;
 const distanciaEmKmDaViagem = 987;
 const valorGasto = 0;
 
-if (tipoCombustivel === 'etanol'){
-    const valorGasto = distanciaEmKmDaViagem/kmPorLitroEtanol*precoEtanol;
-    console.log('O valor gasto é R$:',valorGasto.toFixed(2));
+if (tipoCombustivel === 'etanol') {
+    const valorGasto = distanciaEmKmDaViagem / kmPorLitroEtanol * precoEtanol;
+    console.log('O valor gasto é R$:', valorGasto.toFixed(2));
 } else if (tipoCombustivel === 'gasolina') {
-    const valorGasto = distanciaEmKmDaViagem/kmPorLitroGasolina*precoGasolina;
-    console.log('O valor gasto é R$:',valorGasto.toFixed(2));
-} else{
+    const valorGasto = distanciaEmKmDaViagem / kmPorLitroGasolina * precoGasolina;
+    console.log('O valor gasto é R$:', valorGasto.toFixed(2));
+} else {
     console.log('Tipo de combustível inválido');
-}
+}  d
