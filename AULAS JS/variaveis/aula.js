@@ -14,7 +14,7 @@ a*/
 
 /*Par ou Impar*/
 
-const numero = 27;
+/*const numero = 27;
 const isnumeroPar = (numero % 2) === 0;
 
 
@@ -26,4 +26,25 @@ else if (isnumeroPar) {
 }
 else{
     console.log('Sou Impar')
+}*/
+
+
+/*Gasto édio etanol e gasolina*/
+
+const precoEtanol = 5.89;
+const precoGasolina = 6.39;
+const tipoCombustivel = 'gasolina';
+const kmPorLitroEtanol = 12;
+const kmPorLitroGasolina = 15;
+const distanciaEmKmDaViagem = 987;
+const valorGasto = 0;
+
+if (tipoCombustivel === 'etanol'){
+    const valorGasto = distanciaEmKmDaViagem/kmPorLitroEtanol*precoEtanol;
+    console.log('O valor gasto é R$:',valorGasto.toFixed(2));
+} else if (tipoCombustivel === 'gasolina') {
+    const valorGasto = distanciaEmKmDaViagem/kmPorLitroGasolina*precoGasolina;
+    console.log('O valor gasto é R$:',valorGasto.toFixed(2));
+} else{
+    console.log('Tipo de combustível inválido');
 }
