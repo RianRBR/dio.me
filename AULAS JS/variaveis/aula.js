@@ -47,4 +47,4 @@ if (tipoCombustivel === 'etanol') {
     console.log('O valor gasto é R$:', valorGasto.toFixed(2));
 } else {
     console.log('Tipo de combustível inválido');
-}  d
+}
