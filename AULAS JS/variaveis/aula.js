@@ -84,12 +84,12 @@ console.log('Seu IMC é:', imc.toFixed(2));
 
 if (imc < 18.5) {
     console.log('Abaixo do peso')
-} else if (imc >=18.5 && imc < 24.99) {
+} else if (imc >= 18.5 && imc < 24.99) {
     console.log('Peso normal')
 } else if (imc >= 25 && imc < 29.99) {
     console.log('Acima do peso')
-} else if (imc >=30 && imc< 39.99) {
+} else if (imc >= 30 && imc < 39.99) {
     console.log('Obesidade')
-} else if (imc >=40){
+} else if (imc >= 40) {
     console.log('Obesidade grave')
 }
