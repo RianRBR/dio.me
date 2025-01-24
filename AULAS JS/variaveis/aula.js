@@ -50,7 +50,7 @@ if (tipoCombustivel === 'etanol') {
 } */
 
 
-/*Média de aluno*/
+/*Média de aluno
 const nota1 = 10;
 const nota2 = 8.7;
 const nota3 = 9;
@@ -70,4 +70,25 @@ if (media < 5) {
     console.log('Aprovado')
 } else if(media > 10){
     console.log('Nota inválida')
+}*/
+
+
+
+/* Calculo IMC*/
+
+const peso = 70;
+const altura = 1.70;
+const imc = peso / (altura * altura);
+console.log('Seu IMC é:', imc.toFixed(2));
+
+if (imc < 18.5) {
+    console.log('Abaixo do peso')
+} else if (imc >=18.5 && imc < 24.99) {
+    console.log('Peso noemal')
+} else if (imc >= 25 && imc < 29.99) {
+    console.log('Acima do peso')
+} else if (imc >=30 && imc< 39.99) {
+    console.log('Obesidade')
+} else if (imc >=40){
+    console.log('Obesidade grave')
 }
