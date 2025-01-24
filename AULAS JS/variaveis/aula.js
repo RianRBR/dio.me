@@ -29,7 +29,7 @@ else{
 }*/
 
 
-/*Gasto édio etanol e gasolina*/
+/*Gasto édio etanol e gasolina
 
 const precoEtanol = 5.89;
 const precoGasolina = 6.39;
@@ -47,4 +47,27 @@ if (tipoCombustivel === 'etanol') {
     console.log('O valor gasto é R$:', valorGasto.toFixed(2));
 } else {
     console.log('Tipo de combustível inválido');
-} 
+} */
+
+
+/*Média de aluno*/
+const nota1 = 10;
+const nota2 = 8.7;
+const nota3 = 9;
+const media = (nota1 + nota2 + nota3) / 3;
+
+
+if (nota1 > 10 || nota2 > 10 || nota3 > 10) {
+    console.log('Alguma nota inválida')
+}
+console.log('A média é:', media.toFixed(2));
+
+if (media < 5) {
+    console.log('Reprovado.')
+} else if (media >= 5 && media < 7) {
+    console.log('Recuperação')
+} else  if(media >= 7){
+    console.log('Aprovado')
+} else if(media > 10){
+    console.log('Nota inválida')
+}
