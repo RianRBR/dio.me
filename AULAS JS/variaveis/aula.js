@@ -74,7 +74,7 @@ if (media < 5) {
 
 
 
-/* Calculo IMC*/
+/* Calculo IMC
 
 
 const peso = 79;
@@ -92,4 +92,27 @@ if (imc < 18.5) {
     console.log('Obesidade')
 } else if (imc >= 40) {
     console.log('Obesidade grave')
+} */
+
+/*Calculo de desconto no pagamento */
+
+const valorProduto = 200;
+const qtdParcelas = 3;
+const formaPagamento = 'dinheiro';
+/* Formas de pagamento: dinheiro, pix, credito, debito */
+
+if (formaPagamento === 'debito') {
+    console.log('O valor a ser pago no débito é:', (valorProduto * 0.9).toFixed(2));
+} 
+else if (formaPagamento === 'dinheiro') {
+    console.log('O valor a ser pago no dinheiro é:', (valorProduto * 0.85).toFixed(2));
+} 
+else if (formaPagamento === 'pix') {
+    console.log('O valor a ser pago no PIX é:', (valorProduto * 0.85).toFixed(2));
+} 
+else if (formaPagamento === 'credito' && qtdParcelas <= 2) {
+    console.log('O valor a ser pago no crédito é:', valorProduto.toFixed(2));
+} 
+else if (formaPagamento === 'credito' && qtdParcelas > 2) {
+    console.log('O valor a ser pago é:', (valorProduto * 1.1).toFixed(2));
 }
