@@ -76,15 +76,15 @@ if (media < 5) {
 
 /* Calculo IMC*/
 
-const peso = 70;
-const altura = 1.70;
+const peso = 79;
+const altura = 1.76;
 const imc = peso / (altura * altura);
 console.log('Seu IMC é:', imc.toFixed(2));
 
 if (imc < 18.5) {
     console.log('Abaixo do peso')
 } else if (imc >=18.5 && imc < 24.99) {
-    console.log('Peso noemal')
+    console.log('Peso normal')
 } else if (imc >= 25 && imc < 29.99) {
     console.log('Acima do peso')
 } else if (imc >=30 && imc< 39.99) {
