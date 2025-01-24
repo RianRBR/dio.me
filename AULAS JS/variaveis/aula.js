@@ -76,9 +76,10 @@ if (media < 5) {
 
 /* Calculo IMC*/
 
+
 const peso = 79;
 const altura = 1.76;
-const imc = peso / (altura * altura);
+const imc = peso / (Math.pow(altura, 2));
 console.log('Seu IMC é:', imc.toFixed(2));
 
 if (imc < 18.5) {
