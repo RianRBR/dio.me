@@ -74,33 +74,14 @@ if (media < 5) {
 
 
 
-/* Calculo IMC
-
-
-const peso = 79;
-const altura = 1.76;
-const imc = peso / (Math.pow(altura, 2));
-console.log('Seu IMC é:', imc.toFixed(2));
-
-if (imc < 18.5) {
-    console.log('Abaixo do peso')
-} else if (imc >= 18.5 && imc < 24.99) {
-    console.log('Peso normal')
-} else if (imc >= 25 && imc < 29.99) {
-    console.log('Acima do peso')
-} else if (imc >= 30 && imc < 39.99) {
-    console.log('Obesidade')
-} else if (imc >= 40) {
-    console.log('Obesidade grave')
-} */
-
 /*Calculo de desconto no pagamento */
 
+/*
 const valorProduto = 200;
 const qtdParcelas = 3;
-const formaPagamento = 'dinheiro';
+const formaPagamento = 'dinheiro';*/
 /* Formas de pagamento: dinheiro, pix, credito, debito */
-
+/*
 if (formaPagamento === 'debito') {
     console.log('O valor a ser pago no débito é:', (valorProduto * 0.9).toFixed(2));
 } 
@@ -115,4 +96,43 @@ else if (formaPagamento === 'credito' && qtdParcelas <= 2) {
 } 
 else if (formaPagamento === 'credito' && qtdParcelas > 2) {
     console.log('O valor a ser pago é:', (valorProduto * 1.1).toFixed(2));
+} else if (formaPagamento !== 'debito' && formaPagamento !== 'dinheiro' && formaPagamento !== 'pix' && formaPagamento !== 'credito') {
+    console.log('Forma de pagamento inválida');
+} 
+*/
+
+/*Calculo de desconto no pagamento */
+
+/*function incrementarJuros(valor, percentualJuros) {
+    const valorDeAcrecimo = (percentualJuros / 100) * valor;
+    return valor + valorDeAcrecimo;
 }
+console.log(incrementarJuros(800, 12));*/
+
+/*calcular imc*/
+
+function calcularImc(peso, altura) {
+    return  peso / Math.pow(altura, 2);
+    
+}
+function classificarImc(imc) {
+    if (imc < 18.5) {
+        return 'Abaixo do peso';
+    } else if (imc >= 18.5 && imc < 24.99) {
+        return 'Peso normal';
+    } else if (imc >= 25 && imc < 29.99) {
+        return 'Acima do peso';
+    } else if (imc >= 30 && imc < 39.99) {
+        return 'Obesidade';
+    } else if (imc >= 40) {
+        return 'Obesidade grave';
+    }
+}
+function main() {
+    const peso = 79;
+    const altura = 1.76;
+
+    const imc = calcularImc(peso, altura);
+    console.log(classificarImc(imc));
+}
+main();
