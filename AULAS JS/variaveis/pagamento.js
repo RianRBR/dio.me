@@ -39,4 +39,4 @@ else if (formaPagamento !== 'debito' && formaPagamento !== 'dinheiro' && formaPa
 function incrementarJuros(valor, percentualJuros) {
     const valorDeAcrecimo = (percentualJuros / 100) * valor;
     return valor + valorDeAcrecimo;
-}
+}  
