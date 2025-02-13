@@ -1,0 +1,5 @@
+Conheça nossas soluções ajustar largura e cor
+
+
+Seção de logos, retirar seta, aumentar largura do título e parágrafo, retirar o caixa alta dos títulos.
+Deixar em linha
