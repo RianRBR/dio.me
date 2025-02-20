@@ -8,7 +8,7 @@ class Carro {
     }
 
     calcularConsumo() {
-        console.log(`Você consumirá com o C ${this.marca} o valor de R$ ${(this.distanciaViagem / this.mediaKMporLitro * this.valorLitroCombustivel).toFixed(2)} nesta viagem de ${this.distanciaViagem} km`);
+        console.log(`Você consumirá com o carro ${this.marca} o valor de R$ ${(this.distanciaViagem / this.mediaKMporLitro * this.valorLitroCombustivel).toFixed(2)} nesta viagem de ${this.distanciaViagem} km`);
     }
 
 }
