@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+
+.owl-dots{
+    margin-top: 33px !important;
+    .owl-dot {
+        span {
+            width: 14px !important;
+            height: 14px !important;
+            border-radius: 50% !important;
+        }
+    }
+
+    .owl-dot.active {
+        
+        span {
+            transition: 0.3s ease-in-out;
+            width: 40px !important;
+            height: 14px !important;
+            border-radius: 14px !important;;
+            background: #FD190B !important;
+        }
+    }
+}
+
+        .owl-carousel-dois .container-projetos {
+            position: relative !important;
+            overflow: hidden;
+            border-radius: 20px;
+            max-width: 438px;
+            height: 445px;
+            width: 100%;
+        }
+        
+        .owl-carousel-dois .img {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            align-items: flex-end;
+            justify-content: flex-end;
+            transition: transform 0.5s;
+        }
+        
+        .container-projetos:hover .img {
+            transform: scale(1.1);
+        }
+        
+        .container-projetos:hover .img h3 {
+            display: none;
+        }
+
+        .overlay-dois {
+            height: 0;
+            width: 100%;
+            max-width: 438px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 1) 100%);
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            transition: height 0.5s;
+        }
+
+        .container-projetos:hover .overlay-dois {
+            height: 100%;
+        }
+
+        .overlay-dois h3, .overlay-dois span {
+            color: #fff;
+            font-family: "VisbyCF-Regular", Sans-serif;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .container-projetos:hover .overlay-dois h3 {
+            opacity: 1;
+        }
+
+        .overlay-dois a {
+            color: #fff;
+        }
+
+        .overlay-dois h3 {
+            font-size: 35px;
+            font-family: "VisbyCF-bold", Sans-serif;
+        }
+
+        .overlay-dois span {
+            font-size: 16px;
+            font-family: "VisbyCF-Regular", Sans-serif;
+            line-height: 1.0;
+        }
+
+        .owl-nav .owl-prev, .owl-nav .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white !important;
+            font-weight: 800;
+        }
+
+        .owl-nav .owl-prev {
+            left: -20px;
+        }
+
+        .owl-nav .owl-next {
+            right: -20px;
+        }
+
+
+        /*BRF PET*/
+        .img01-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/BRF-Pet-Foto-Capa.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        /*Fast Shop*/
+        .img02-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Fast-Shop-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+          /*Kwai*/
+        .img03-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Kwai.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        /*Aço Cearence*/
+        .img04-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Aco-Cearense-Encontro-Anual-de-Vendas-2022-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        /*iRede*/
+        .img05-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/IREDE-INAUGURACAO-ESCRITORIO-FOR-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            /*Nuclea 2024*/
+        .img06-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Nuclea-Febraban-Tech-2024-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            /*Spic Brasil*/
+        .img07-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/SPIC-Brasil-Complexo-Solar-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            /*Nuclea 2023*/
+            /*.img08-1slide-projeto{
+                background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Nuclea-Festa-Final-de-Ano-2023-1.jpeg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }*/
+            /*Enel*/
+        .img09-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Enel-Iluminacao-fachada-CE-2-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+            /*Better Colective*/
+        .img10-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/FOTO-CAPA-COLLECTIVE-FUTBOLSITES-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+                /*Votorantim SA */
+        .img11-1slide-projeto{
+            background-image: url('https://pronto.ag/wp-content/uploads/2024/08/Votorantim0254-Dia-11-1.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="owl-carousel-dois owl-carousel owl-theme">
+        <div class="item container-projetos">
+            <div class="img img01-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#brf-pet-en">BRF Pet</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img02-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#fast-shop-en">Fast Shop</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img03-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#kwai-en">Kwai</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img04-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#aco-cearense-en">Aço Cearense</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img05-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#irede-en">iRede</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img06-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#nuclea-24-en">Núclea</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img07-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#spic-en">Spic Brazil</a></h3>
+            </div>
+        </div>
+        <div class="item container-projetos">
+            <div class="img img09-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#enel-en">Enel</a></h3>
+            </div>
+        </div>
+
+        <div class="item container-projetos">
+            <div class="img img10-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#better-colective-en">Futbol Sites - a part of Better Collective</a></h3>
+            </div>
+        </div>
+
+        <div class="item container-projetos">
+            <div class="img img11-1slide-projeto"></div>
+            <div class="overlay-dois">
+                <h3><a href="#votorantim-en">Votorantim SA</a></h3>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel-dois").owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1024: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
