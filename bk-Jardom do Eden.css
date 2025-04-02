@@ -1,0 +1,40 @@
+
+.contato-atendimento .links-contatos a{
+	margin-bottom:10px !important;
+}
+
+.bloco-mvv{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	border:1px solid #212121;
+	transition:1s;
+	padding:30px;
+
+}
+.bloco-mvv:hover{
+	animation: jump 1.5s linear 0s 1 normal none;
+}
+
+
+@keyframes jump {
+			
+		0% {
+			transform:translateY(0);
+		}
+		20% {
+			transform:translateY(0);
+		}
+		40% {
+			transform:translateY(-30px);
+		}
+		50% {
+			transform:translateY(0);
+		}
+		60% {
+			transform:translateY(-15px);
+		}
+		80% {
+			transform:translateY(0);
+		}
+		100% {
+			transform:translateY(0);
+		}
