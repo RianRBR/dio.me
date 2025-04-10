@@ -1,0 +1,116 @@
+.section-slider .swiper-container {
+	max-height: 900px !important;
+}
+
+.service-item-image {
+	max-width: 200px !important;
+}
+
+.section-informative-banners {
+	padding: 20px 0 0px 0;
+}
+
+.section-categories-home {
+	padding-top: 0px !important;
+}
+
+.home-category-name {
+	display: none !important;
+}
+
+.pr-0 {
+	padding-bottom: 20px !important;
+}
+
+.swiper-container {
+	max-height: 600px !important;
+}
+
+.product-slider-image {
+	max-height: 600px !important;
+}
+
+.home-category {
+	height: 82px !important;
+	width: 100px !important;
+	border-radius: 1px !important;
+}
+
+.home-category-image {
+	height: 82px !important;
+	width: 120px !important;
+	border-radius: 1px !important;
+	background: #fff !important;
+}
+
+.home-category-image img {
+	height: 80px !important;
+	width: 100px !important;
+	border-radius: 1px !important;
+}
+
+.section-video-home {
+	margin-bottom: -1px;
+	margin-top: 70px;
+}
+
+
+/* Começo Mobile */
+
+@media screen and (max-width:698px) {
+	.home-category {
+		height: 82px !important;
+		width: 100px !important;
+		border-radius: 1px !important;
+	}
+
+	.section-categories-home {
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+	}
+
+	.service-item-image {
+		max-width: 223px !important;
+	}
+
+	.section-informative-banners {
+		padding: 10px 0 30px 0;
+		margin-bottom: -35px !important;
+	}
+
+	.home-category-image {
+		height: 82px !important;
+		width: 120px !important;
+		border-radius: 1px !important;
+		background: #fff !important;
+	}
+
+	.home-category-image img {
+		height: 82px !important;
+		width: 100px !important;
+		border-radius: 1px !important;
+	}
+
+	.js-banners-promotional {
+		margin-top: -60px !important;
+		margin-bottom: -20px !important;
+	}
+
+	.section-banners-home {
+		margin: -80px auto 10px auto;
+	}
+
+	.textbanner {
+		margin-bottom: 25px;
+	}
+
+	.section-institutional-home {
+		padding-top: 0px !important;
+		margin-top: -30px;
+	}
+
+
+	h2 {
+		padding: 20px 0 !important;
+	}
+}
