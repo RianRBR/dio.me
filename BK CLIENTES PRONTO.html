@@ -1,0 +1,399 @@
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .swiper2 {
+      width: 100%;
+      height: 150px;
+      background-color: white;
+      overflow: hidden;
+      border-radius:200px;
+      -webkit-box-shadow: -1px 6px 81px -30px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 6px 81px -30px rgba(0,0,0,0.75);
+box-shadow: -1px 6px 81px -30px rgba(0,0,0,0.12);
+    }
+
+    .swiper-slide{
+      background:transparent;
+    }
+
+    /*.swiper-slide img {*/
+    /*  display: block;*/
+    /*  width: 100%;*/
+    /*  height: 100%;*/
+    /*  object-fit: cover;*/
+    /*}*/
+    
+    .wrapper-slide-img2{
+        overflow: hidden;
+        transition: 1s;
+        border-radius:20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100px;
+        filter: grayscale(1);
+        
+    }
+    .wrapper-slide-img2:hover{
+        scale: 1.05;
+        filter: grayscale(0);
+        transition: 0.3s;
+        z-index: 888888;
+    }
+    
+    /*Assaí*/
+    .img-logo01{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/assai551.png');
+       
+    }
+    
+    /*B.braum*/
+    .img-logo02{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/braun60.png'); 
+    }
+    
+    /*Bosch*/
+    .img-logo03{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/bosch1.png'); 
+    }
+    
+    /*Better*/
+    .img-logo04{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/better82.png'); 
+    }
+    /*azul*/
+    /*.img-logo05{*/
+    /*   background-image: url('https://imgur.com/WBhN7wx.jpeg'); */
+    /*}*/
+    
+    /*brf*/
+    .img-logo06{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/brf1.png'); 
+    }
+    /*brfpet*/
+    .img-logo07{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/pet1.png'); 
+    }
+
+    /*campari*/
+    .img-logo08{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/camparii.png'); 
+    }
+    
+    /*carrefour*/
+    .img-logo09{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/carrefour55-1.png'); 
+    }
+    
+    /*commit*/
+    .img-logo10{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/commit1.png'); 
+    }
+    /*equals*/
+    /*.img-logo11{*/
+    /*   background-image: url('https://imgur.com/EnEfcaS.jpeg'); */
+    /*}*/
+    /*enel*/
+    .img-logo12{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/enel1.png'); 
+    }
+    /*fast*/
+    .img-logo13{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/fastg.png'); 
+    }
+    /*Fundacao*/
+    .img-logo14{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/vanzilini1.png'); 
+    }
+    /*irede*/
+    .img-logo15{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/irede1.png'); 
+    }
+    /*lg*/
+    /*.img-logo16{*/
+    /*   background-image: url('https://imgur.com/Pcd87q4.jpeg'); */
+    /*}*/
+    
+    /*kwai*/
+    .img-logo17{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/kwai1.png'); 
+    }
+    /* northshopping*/
+    .img-logo18{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/north111.png'); 
+    }
+    
+    /*nuclea*/
+    .img-logo19{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/nuclea80.png'); 
+    }
+    /*pantanal*/
+    .img-logo20{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/pantanal60.png'); 
+    }
+    /*spic*/
+    .img-logo21{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/spic94.png'); 
+    }
+    /*pernoid ricard*/
+    /*.img-logo22{*/
+    /*   background-image: url('https://imgur.com/o73KTWd.jpeg'); */
+    /*}*/
+    /*tetrapark*/
+    .img-logo23{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/tetrapark1.png'); 
+    }
+    /*tetrapark*/
+    /*.img-logo24{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/tetrapark1.png'); 
+    }*/
+    /*bbraum*/
+    /*.img-logo25{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/braun60.png'); 
+    }*/
+    /*toyota*/
+    /*.img-logo26{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/NUCLEA_LOGO_NOVO-1-01-1.png'); 
+    }*/
+    /*viavarejo*/
+    /*.img-logo27{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/Marca-NS-Joquei-1.png'); 
+    }*/
+    /*vivo*/
+    /*.img-logo28{*/
+    /*   background-image: url('https://imgur.com/HYRp0kZ.jpeg'); */
+    /*}*/
+    /*votorantim*/
+   /* .img-logo29{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/pantanal.png'); 
+    }*/
+    /*ype*/
+   /* .img-logo30{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/spic.png');
+    }*/
+    
+    /*.img-logo31{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/stone.png');
+    }*/
+    
+    /*.img-logo32{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/Logo_tretapaak-01-1.png');
+    }*/
+    
+    /*.img-logo33{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/toyota.png');
+    }*/
+    
+    /*.img-logo34{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/image-29.png');
+    }*/
+    
+    /*.img-logo35{
+       background-image: url('https://pronto.ag/wp-content/uploads/2024/07/Logo-Ype-Produto-COM-Volume-CMYK-1.png');
+    }*/
+    
+  </style>
+
+<body >
+  <!-- Swiper -->
+  <div class="swiper2 mySwiper2" style="display: none;">
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo01"></div>
+        </div>
+      
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo02"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo03"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo04"></div>
+        </div>
+        
+        <!--<div class="swiper-slide">-->
+        <!--  <div class="wrapper-slide-img2 img-logo05"></div>-->
+        <!--</div>-->
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo06"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo07"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo08"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo09"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo10"></div>
+        </div>
+        
+        <!--<div class="swiper-slide">-->
+        <!--  <div class="wrapper-slide-img2 img-logo11"></div>-->
+        <!--</div>-->
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo12"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo13"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo14"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo15"></div>
+        </div>
+        
+        <!--<div class="swiper-slide">-->
+        <!--  <div class="wrapper-slide-img2 img-logo16"></div>-->
+        <!--</div>-->
+      
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo17"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo18"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo19"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo20"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo21"></div>
+        </div>
+        
+        <!--<div class="swiper-slide">-->
+        <!--  <div class="wrapper-slide-img2 img-logo22"></div>-->
+        <!--</div>-->
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo23"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo24"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo25"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo26"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo27"></div>
+        </div>
+        
+        <!--<div class="swiper-slide">-->
+        <!--  <div class="wrapper-slide-img2 img-logo28"></div>-->
+        <!--</div>-->
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo29"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo30"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo31"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo32"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo33"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo34"></div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="wrapper-slide-img2 img-logo35"></div>
+        </div>
+      
+    </div>
+  <!--  <div class="swiper-button-next"></div>-->
+  <!--  <div class="swiper-button-prev"></div>-->
+  <!--</div>-->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+      slidesPerView: 8,
+      spaceBetween: 30,
+      autoplay:true,
+      speed:300,
+      delay: 300,
+      breakpoints: {
+
+        1324: {
+          slidesPerView: 8,
+          spaceBetween: 10,
+        },
+
+        1230: {
+          slidesPerView: 6,
+          spaceBetween: 10,
+        },
+        1000: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        308: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
