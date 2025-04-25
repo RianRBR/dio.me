@@ -1,0 +1,8 @@
+.secao_texto summary{
+    color: #805212 !important;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
