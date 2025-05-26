@@ -59,13 +59,15 @@
         flex-direction: column !important;
     }
 
-    .aplicavel{
+    .aplicavel {
         margin-bottom: 150px !important;
     }
-    .mega-banner{
+
+    .mega-banner {
         height: 900px !important;
     }
-    .mega-banner::after{
+
+    .mega-banner::after {
         top: 800px !important;
         right: 0px !important;
         width: 110vw !important;
@@ -81,7 +83,8 @@
         justify-content: center;
 
     }
-    .plano-valor{
+
+    .plano-valor {
         flex-direction: column !important;
     }
 
