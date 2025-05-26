@@ -9,10 +9,11 @@ class Pessoa {
         this.peso = peso;
     }
 
-    calcularImc(peso, altura) {
-        return peso / Math.pow(altura, 2);
+    calcularImc() {
+        return this.peso / Math.pow(this.altura, 2);
     }
-    classificarImc(imc) {
+    classificarImc() {
+        const imc = this.calcularImc();
         if (imc < 18.5) {
             return 'Abaixo do peso';
         } else if (imc >= 18.5 && imc < 24.99) {
@@ -30,5 +31,14 @@ class Pessoa {
 }
 
 
-const Rian = new Pessoa('Rian', 1.70, 70);
+const Rian = new Pessoa('Rian', 1.76, 80);
 console.log("O IMC de Rian é de", Rian.calcularImc(70, 1.70), 'e ele está', Rian.classificarImc(Rian.calcularImc(70, 1.70)));
+
+
+
+
+class Pessoa { nome; idade; constructor(nome, idade) { 
+    this.nome = nome; this.idade = idade; } 
+    descrever() 
+    { console.log(`Nome: ${this.nome}; Idade: ${this.idade};`); 
+} } new Pessoa('Renan', 30).descrever(); 
