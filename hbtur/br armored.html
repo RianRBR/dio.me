@@ -1,0 +1,113 @@
+<?php
+/**
+ * Template Name: Armored
+*/
+get_header(); ?>
+
+<div id="general">
+	<header>
+		<a href="<?php bloginfo('url'); ?>" class="logo">
+			<img src="<?php bloginfo('template_url'); ?>/images/logo.png" />
+		</a>
+		<nav>
+		<ul>
+				<li><a href="<?php bloginfo('url'); ?>/en/#carros">cars</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/#vantagens">advantages</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/#quemsomos">about us</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/#terceirizacao">outsourcing</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/armored-vehicles">armored vehicles</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/#contato">contact</a><span></span></li>
+				<li><a href="<?php bloginfo('url'); ?>/blindados" class="br"><img src="<?php bloginfo('template_url'); ?>/images/br.png" alt="Brasil"></a></li>
+				<li><a href="<?php bloginfo('url'); ?>/en/armored-vehicles" class="en selected"><img src="<?php bloginfo('template_url'); ?>/images/en.png" alt="USA"></a></li>
+			</ul>
+		</nav>
+		<a href="#" class="menu"><i class="fas fa-bars"></i></a>
+	</header>
+	
+	<main>
+		<section id="blind">
+			<div class="wrapper">
+				<hgroup>
+					<h1>You deserve the security of an <span>armored vehicles</span>.</h1>
+					<h2>Get to know Fortaleza and Ceará in the comfort of an executive car or armored SUV. Brand new cars and options with a driver avaliable.</h2>
+					<a href="#formblind">I want to know more</a>
+				</hgroup>
+			</div>
+		</section>
+		<section id="blindbody">
+			<div class="wrapper">
+				<div class="left">
+					<h2>
+					Security is always in the first place
+					</h2>
+					<p>
+					Ideal for those who worry about violence and want to enjoy the city in a safe and protected way. Ideal also for VIP transfers.
+					</p>
+				</div>
+				<div class="right">
+					<h2>
+						Executives and armored SUVs
+					</h2>
+					<p>
+					Comfortable and luxurious options, vehicles less than 2 years old, like Toyota Corolla and Jeep Compass.
+					</p>
+				</div>
+				
+				<div class="vip">
+					<img src="<?php bloginfo('template_url'); ?>/images/vip.jpg" alt="VIP" />
+					<div class="info">
+						<h2><span>VIP</span> | Comfort and safety to make your work easier</h2>
+						<p>We offer ideal solutions for those who work with events and deal with people who require additional security and logistics.<br /><br /> You can count on executive cars and SUVs, along with the options of a highly trained drivers for this type of service.</p>
+						<a href="#formblind">I want to receive a phone call</a>
+					</div>
+				</div>
+				
+				<ul>
+					<li>
+						<img src="<?php bloginfo('template_url'); ?>/images/blindicon1.png" alt="Serviço de motorista" />
+						<hgroup>
+							<h2>Chauffeur <br /> service</h2>
+							<h3>We offer trained professionals so that you may have all the convenience.</h3>
+						</hgroup>
+					</li>
+					<li>
+						<img src="<?php bloginfo('template_url'); ?>/images/blindicon2.png" alt="Suporte de prontidão 24h" />
+						<hgroup>
+							<h2>24-hour<br /> support</h2>
+							<h3>We are always ready to answer your questions and solve any issues that come up.</h3>
+						</hgroup>
+					</li>
+					<li>
+						<img src="<?php bloginfo('template_url'); ?>/images/blindicon3.png" alt="Flexibilidade na entrega" />
+						<hgroup>
+							<h2>Flexibility<br /> on delivery</h2>
+							<h3>We fully customize your service to offer you the best experience.</h3>
+						</hgroup>
+					</li>
+					<li>
+						<img src="<?php bloginfo('template_url'); ?>/images/blindicon4.png" alt="Frota novíssima e segurada" />
+						<hgroup>
+							<h2>Brand new,<br /> insured fleet</h2>
+							<h3>All vehicles are less than 2 years old and fully insured.</h3>
+						</hgroup>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="formblind">
+			<div class="wrapper">
+				<div class="getform">
+				<hgroup>
+					<h2>você pode<br /> muito mais</h2>
+					<h3>Conheça o Ceará com conforto e segurança de um veículo blindado HBTur. Clique para ligar para o fone</h3>
+					<a href="tel:8532425036"><i class="fas fa-phone"></i> (85) 3242-5036</a>
+					<p>ou preencha o formulário abaixo:</p>
+				</hgroup>
+				<?php echo do_shortcode('[contact-form-7 id="60" title="Form Blindados"]'); ?>
+				</div>
+			</div>
+
+		</section>
+	</main>
+<?php get_footer(); ?>
