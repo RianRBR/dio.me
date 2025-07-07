@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<style>
+
+.owl-stage {
+    position: relative;
+}
+
+/* #497172e.owl-item {
+    z-index: -1 !important;
+}
+
+#497172e.owl-item:hover {
+    z-index: 3 !important;
+    transform: scale(1.1);
+} */
+
+.owl-stage-outer {
+    overflow: visible !important;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 620px) {
+    .owl-stage-outer {
+    overflow: visible !important;
+    padding: 0;
+}
+}
+
+.owl-dots{
+    margin-top: 33px !important;
+    .owl-dot {
+        span {
+            width: 14px !important;
+            height: 14px !important;
+            border-radius: 50% !important;
+        }
+    }
+
+    .owl-dot.active {
+        
+        span {
+            transition: 0.3s ease-in-out;
+            width: 40px !important;
+            height: 14px !important;
+            border-radius: 14px !important;;
+            background: #FD190B !important;
+        }
+    }
+}
+  /* Estilos principais */
+  .owl-carousel {
+      width: 100%;
+      /*height: 327px;*/
+      background-color: transparent;
+  }
+  
+  .item-fazemos {
+     
+     
+      height: 312px;
+      overflow: hidden;
+      border-radius: 20px;
+      transition: transform 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     z-index: 1;
+    position: relative;
+    transition: transform 0.3s, z-index 0s;
+  }
+  
+  .item-fazemos:hover {
+    
+      z-index: 999;
+        
+      
+  }
+  
+  /* Estilo para o texto sobre o card */
+  .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      
+  }
+
+  /* Exibir o overlay com a descrição ao passar o mouse */
+  .item-fazemos:hover .overlay {
+      opacity: 1;
+      
+  }
+  
+  .item-fazemos:hover {
+      z-index: 3;
+    
+  }
+
+  /* Esconder o título ao passar o mouse */
+  .item-fazemos:hover .title {
+      opacity: 1;
+  }
+
+  .img {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+  }
+
+  /* Gradiente horizontal sobre o item */
+.item-fazemos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 181, 201, 0.2) 0%, rgba(103, 0, 131, 0.4) 100%);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; /* Gradiente visível por padrão */
+}
+
+/* Quando o overlay estiver visível, remover o gradiente */
+.item-fazemos:hover::before {
+    opacity: 1;
+}
+
+    .item-fazemos .img {
+        overflow: hidden;
+        border-radius: 20px;
+       transition: all .5s ease-in-out;
+    }
+
+    .item-fazemos:hover .img {
+        
+        transform: scale(1.05);
+    }
+
+  /* Estilos das imagens específicas */
+  .img01-1slide { background-image: url('https://pronto.ag/wp-content/uploads/2024/08/undefined-Imgur.jpg'); }
+  .img02-1slide { background-image: url('https://pronto.ag/wp-content/uploads/2024/08/undefined-Imgur-1.jpg'); }
+  .img03-1slide { background-image: url('https://pronto.ag/wp-content/uploads/2024/08/undefined-Imgur-2.jpg'); }
+  .img04-1slide { background-image: url('https://pronto.ag/wp-content/uploads/2024/08/QgnKaVK-Imgur.jpg'); }
+
+  /* Estilo para o título */
+  .title {
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 238px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+
+
+  /* Estilo da descrição dentro do overlay */
+  .description {
+      font-size: 18px;
+      line-height: 1.4;
+      padding: 20px 60px;
+  }
+  
+  img.element-title {
+    width: 64px !important;
+    margin-top: 10px;
+}
+
+</style>
+
+<body>
+<div class="owl-carousel owl-theme myOwlCarousel">
+    <a  class="item-fazemos">
+        <div class="img img02-1slide"></div>
+        <div class="title">Endomarketing & Incentivo
+        <img class="element-title" src="https://pronto.ag/wp-content/uploads/2025/04/elemento.png" />
+        </div>
+        
+    </a>
+    
+    <a  class="item-fazemos">
+        <div class="img img03-1slide"></div>
+        <div class="title">Ativaçāo, PDV & Promoçāo
+        <img class="element-title" src="https://pronto.ag/wp-content/uploads/2025/04/elemento.png" />
+        </div>
+        
+    </a>
+    
+    <a  class="item-fazemos">
+        <div class="img img01-1slide"></div>
+        <div class="title">Eventos Digitais
+        <img class="element-title" src="https://pronto.ag/wp-content/uploads/2025/04/elemento.png" />
+        </div>
+        
+    </a>
+    
+    <a  class="item-fazemos">
+        <div class="img img04-1slide"></div>
+        <div class="title">Eventos Corporativo, Esportivo & Cultural
+        
+            <img class="element-title" src="https://pronto.ag/wp-content/uploads/2025/04/elemento.png" />
+        </div>
+        
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.myOwlCarousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1024: { items: 3 }
+      },
+      
+    });
+  });
+</script>
+</body>
+</html>
