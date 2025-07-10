@@ -1,0 +1,39 @@
+@media screen and (min-width:768px) {
+    .home-slider .swiper-slide .slide-container .swiper-slide-activ {
+        width: 100vw !important;
+    }
+}
+
+@media screen and (min-width:1368px) {
+    .home-slider {
+        max-width: 100vw !important;
+    }
+}
+
+.btn-secondary:hover,
+.btn-tertiary:hover,
+.btn-primary:hover,
+.footer a:hover,
+.footer-legal:hover {
+    font-size: 105%;
+}
+
+@media (max-width:767px) {
+    .mobile-nav-second-row {
+        display: block;
+        padding: 0 !important;
+    }
+
+    .col-sm-4 {
+        padding-right: 15px !important;
+    }
+}
+
+.module-wrapper-promotional .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.logo-fixed {
+    max-height: 110px !important;
+}

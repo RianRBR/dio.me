@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+header {
+    width: 80vw;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+    z-index: 10;
+
+
+    & img {
+        width: 250px;
+    }
+
+    & nav {
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+        }
+    }
+
+}
+
+section {
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    height: 100vh;
+    position: relative;
+
+    & .list {
+        width: 70vw;
+        height: 100%;
+        margin: auto;
+        position: relative;
+
+        & .item {
+            position: absolute;
+            inset: 0;
+
+            & .car-img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 70%;
+
+                & img {
+                    width: 100%;
+                    transform: rotate(-17deg);
+                }
+
+            }
+
+            & .content {
+                position: absolute;
+                right: 100px;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                gap: 20px;
+
+                & car-information {
+                    font-weight: bold;
+
+                }
+
+                & h2 {
+                    font-size: 8em;
+                    line-height: 1em;
+                    text-align: end;
+                    font-family: "League Gothic", sans-serif;
+
+                }
+
+                & .description {
+                    color: #d9d9d9;
+                    font-size: 12px;
+                    align-items: right;
+                    max-width: 400px;
+                    text-align: end;
+
+                }
+
+                & .information {
+                    border-radius: 30px;
+                    height: 35px;
+                    width: 120px;
+                    text-transform: uppercase;
+                    border: 2px solid #791fd3;
+                    background-color: #beff1b;
+                    color: #000;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
+
+                }
+
+
+
+            }
+
+        }
+        &::before {
+            content: "";
+            border-top: 1px solid #fff;
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+        }
+
+    }
+
+
+    .arrows {
+        width: 75vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25px);
+        display: flex;
+        justify-content: space-between;
+
+        & button:nth-child(1) {
+            transform: scale(-1);
+        }
+
+        & button {
+            top: 60%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            
+            & img {
+                width: 30px;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+            &:hover {
+                background-color: #beff1b;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    & .indicators {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 200px;
+        width: 90vw;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        & .number {
+            font-size: 5em;
+            font-family: "League Gothic", sans-serif;
+
+        }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: #beef1b;
+                border-radius: 5px;
+                gap: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            & .active {
+                width: 60px;
+                background-color: #FFF;
+            }
+
+        }
+
+    }
+
+}
