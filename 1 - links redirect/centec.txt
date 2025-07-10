@@ -39,3 +39,6 @@ centec/editais/vestibular/
 
 editais/pos-graduacao-lato-sensu/
 editais/pos-graduacao/
+
+comunicacao/
+conteudos/
