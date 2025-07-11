@@ -29,16 +29,16 @@
     <div class="col-12">
         <div class="form-group">
             <label for="solucao">Soluções:</label>
-            [select* solucao id:solucao "Escolha uma opção" "Self Storage" "Coworking"]
+            [select* solucao id:solucao class:form-control include_blank "Self Storage" "Coworking"]
 
             <div id="self_storage_options" style="display:none;">
                 <label for="uso">Uso:</label>
-                [select* uso id:uso "Escolha o uso" "Uso Pessoal" "Uso Profissional"]
+                [select* uso id:uso class:form-control include_blank "Uso Pessoal" "Uso Profissional"]
             </div>
 
             <div id="coworking_options" style="display:none;">
                 <label for="espaco">Tipo de Espaço:</label>
-                [select* espaco id:espaco "Escolha o tipo de espaço" "Endereço Virtual" "Salas Privativas" "Espaços
+                [select* espaco id:espaco class:form-control include_blank "Endereço Virtual" "Salas Privativas" "Espaços
                 Compartilhados" "Salas de Reuniões" "Auditório" "Sala de Podcast"]
             </div>
         </div>
