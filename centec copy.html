@@ -1,110 +1,71 @@
-<div class="row">
-    <div class="col-12 col-lg-6">
+<details><summary>PROGRAMAÇÃO JULHO</summary>
+<p style="text-align: center;"><strong>Terça-feira 08/07</strong>
+14h Oficina de Pipa
+15h: Oficina de Dedoche
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Quarta-feira 09/07</strong>
+15h: Oficina de Gesso
+19h30: Bingo</p>
+<p style="text-align: center;"><strong>Quinta-feira 10/07</strong>
+16h: Oficina Mini Chef
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Sexta-feira 11/07</strong>
+19h: Show de Mágica</p>
+<p style="text-align: center;"><strong>Sábado 12/07</strong>
+10h às 17h: Recreação infantil
+17h: Sunset com DJ
+Luau Varandas com fogueira e marshmallow</p>
+<p style="text-align: center;"><strong>Domingo 13/07</strong>
+11h: Aula de ritmos
+18h: Momento Just Dance</p>
+<p style="text-align: center;"><strong>Segunda-feira 14/07</strong>
+10h às 17h: Recreação infantil
+16h30: Aula de Yoga</p>
+<p style="text-align: center;"><strong>Terça-feira 15/07</strong>
+14h: Oficina de Pipa
+15h: Oficina de Dedoche
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Quarta-feira 16/07</strong>
+16h: Oficina de Barro
+19h30: Bingo</p>
+<p style="text-align: center;"><strong>Quinta-feira 17/07</strong>
+16h: Oficina Mini Chef
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Sexta-feira 18/07</strong>
+10h às 17h: Recreação infantil
+19h: Show de Mágica</p>
+<p style="text-align: center;"><strong>Sábado 19/07</strong>
+10h às 17h: Recreação infantil
+17h: Sunset com DJ</p>
+<p style="text-align: center;"><strong>Domingo 20/07</strong>
+11h: Aula de ritmos
+18h: Momento Just Dance</p>
+<p style="text-align: center;"><strong>Segunda-feira 21/07</strong>
+10h às 17h: Recreação infantil
+16h30: Aula de Yoga</p>
+<p style="text-align: center;"><strong>Terça-feira 22/07</strong>
+14h: Oficina de Pipa
+15h: Oficina de Dedoche
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Quarta-feira 23/07</strong>
+15h: Oficina de Gesso
+19h30: Bingo</p>
+<p style="text-align: center;"><strong>Quinta-feira 24/07</strong>
+16h: Oficina Mini Chef
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>Sexta-feira 25/07</strong>
+19h: Show de Mágica</p>
+<p style="text-align: center;"><strong>Sábado 26/07</strong>
+10h às 17h: Recreação infantil
+19h30: Encontro Gastronômico Norte e Nordeste com Chef Cadu de Oyá ao som de Voz e Violão*</p>
+<p style="text-align: center;"><strong>Domingo 27/07</strong>
+11h: Aula de ritmos
+18h: Momento Just Dance</p>
+<p style="text-align: center;"><strong>Terça-feira 29/07</strong>
+14h: Oficina de Pipa
+15h: Oficina de Dedoche
+19h: Cinema Varandas</p>
+<p style="text-align: center;"><strong>* Encontro Gastronômico mediante contratação, não incluso na reserva</strong></p>
+<p style="text-align: center;"><strong>Sujeito a alteração sem aviso prévio</strong></p>
 
-        <div class="form-group">
-            <label>Nome</label>[text* nome class:form-control placeholder "Digite seu nome"]
-        </div>
-        <div class="form-group">
-            <label>WhatsApp</label>[text* telefone class:form-control id:telefone placeholder "Telefone"]
-        </div>
-
-    </div>
-
-    <div class="col-12 col-lg-6">
-
-        <div class="form-group">
-            <label>E-mail</label>[email* email class:form-control placeholder "Seu e-mail"]
-        </div>
-
-        <div class="form-group">
-            <label>Para quando você precisa do espaço?</label>[select* assunto class:form-control include_blank "O
-            quanto antes possível, é urgente! (em até 24h)"
-            "Tenho pressa, mas consigo esperar até 1 semana"
-            "Estou me organizando! Acredito que em torno de 15 dias seja o ideal"
-            "Comecei a pesquisar agora... então algo para 30 dias ou mais!"
-            "Não tenho data definida ainda"]
-        </div>
-
-    </div>
-    <div class="col-12">
-        <div class="form-group">
-            <label for="solucao">Soluções:</label>
-            [select* solucao id:solucao class:form-control include_blank "Self Storage" "Coworking"]
-
-            <div id="self_storage_options" style="display:none;">
-                <label for="uso">Uso:</label>
-                [select* uso id:uso class:form-control include_blank "Uso Pessoal" "Uso Profissional"]
-            </div>
-
-            <div id="coworking_options" style="display:none;">
-                <label for="espaco">Tipo de Espaço:</label>
-                [select* espaco id:espaco class:form-control include_blank "Endereço Virtual" "Salas Privativas" "Espaços
-                Compartilhados" "Salas de Reuniões" "Auditório" "Sala de Podcast"]
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="col-12">
-    <div class="form-group">
-        <label>Mensagem</label>[textarea mensagem class:form-control mensagem placeholder "Digite sua mensagem aqui."]
-    </div>
-</div>
-
-<div class="form-group">
-    [acceptance aceitacao] Li e aceito os termos de
-    <a href="https://armazeminteligente.com.br/politica-privacidade/" style="color: #22aab7;font-weight: 500"
-        title="Política de privacidade" target="_blank">Política de Privacidade de Dados</a>
-    [/acceptance]
-</div>
-
-<div class="col-12">
-    [submit class:bt__padrao "Enviar Mensagem"]
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var selectSolucoes = document.getElementById('solucao');
-        var selfStorageOptions = document.getElementById('self_storage_options');
-        var coworkingOptions = document.getElementById('coworking_options');
-        var form = document.querySelector('form.wpcf7-form');
-
-        selectSolucoes.addEventListener('change', function () {
-            // Esconde todos os filtros inicialmente
-            selfStorageOptions.style.display = 'none';
-            coworkingOptions.style.display = 'none';
-
-            // Mostra o filtro correspondente
-            if (selectSolucoes.value === 'Self Storage') {
-                selfStorageOptions.style.display = 'block';
-            } else if (selectSolucoes.value === 'Coworking') {
-                coworkingOptions.style.display = 'block';
-            }
-        });
-
-        // Validação antes de enviar o formulário
-        form.addEventListener('submit', function (e) {
-            // Se nenhuma opção for escolhida no primeiro campo
-            if (!selectSolucoes.value) {
-                alert('Por favor, escolha uma solução (Self Storage ou Coworking).');
-                e.preventDefault();  // Impede o envio do formulário
-                return;
-            }
-
-            // Se a opção Self Storage for escolhida, verificar se o tipo de uso foi selecionado
-            if (selectSolucoes.value === 'Self Storage' && !document.getElementById('uso').value) {
-                alert('Por favor, escolha o tipo de uso para Self Storage.');
-                e.preventDefault();  // Impede o envio do formulário
-                return;
-            }
-
-            // Se a opção Coworking for escolhida, verificar se o tipo de espaço foi selecionado
-            if (selectSolucoes.value === 'Coworking' && !document.getElementById('espaco').value) {
-                alert('Por favor, escolha o tipo de espaço para Coworking.');
-                e.preventDefault();  // Impede o envio do formulário
-                return;
-            }
-        });
-    });
-</script>
+</details>
