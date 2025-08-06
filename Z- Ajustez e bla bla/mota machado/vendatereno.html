@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-12">
+      <h2 class="titulo__secao">Envie suas informações</h2>
+    </div>
+    
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>Nome*</label>[text* nome class:form-control placeholder "Digite seu nome"]
+        </div>
+        <div class="form-group">
+            <label>Telefone*</label>[tel* telefone class:form-control id:telefone placeholder "Digite seu telefone"]
+        </div>
+        <div class="form-group">
+            <label>E-mail*</label>[email* email class:form-control placeholder "Digite seu e-mail"]
+        </div>
+        
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>Relação com o terreno*</label>
+            [select* relacao_terreno class:form-control include_blank "Proprietário" "Corretor" "Outro"]
+        </div>
+        <div class="form-group">
+            <label>Valor esperado de m²*</label>[text* valor_m2 class:form-control placeholder "Digite o valor esperado de m²"]
+        </div>
+        <div class="form-group">
+            <label>Endereço do Imóvel*</label>[text* endereco_imovel class:form-control placeholder "Digite o endereço do imóvel"]
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-group-textarea">
+            <label>Mensagem*</label>[textarea* mensagem class:form-control placeholder "Digite sua mensagem"]
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>KMZ do terreno*</label>[file* kmz_terreno class:form-control limit:5mb filetypes:kmz]
+        </div>
+        <div class="form-group">
+            <label>Matrícula*</label>[file* matricula class:form-control limit:5mb filetypes:kmz]
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>IPTU*</label>[file* iptu class:form-control limit:5mb filetypes:kmz]
+        </div>
+        <div class="form-group">
+            <label>Outros*</label>[file* outros class:form-control limit:5mb filetypes:kmz]
+        </div>
+
+    </div>
+<h5 style="padding-left: 15px;">Somente arquivos .KMZ</h5>
+
+    <div class="col-12" style="display: flex; align-items: flex-start;">
+        <div class="recaptcha-theme" style="margin-top: 20px;">
+            [recaptcha]
+        </div>
+    </div>
+
+    <div class="col-12 final-line">
+        [acceptance acceptance-565] Aceito as <a style="color:#ffffff" href="https://motamachado.com.br/politica-de-privacidade/"><u>Política de Privacidade.</u></a>
+        [/acceptance]
+
+        <div class="btn">
+            [submit class:submit-btn "Enviar"]
+        </div>
+    </div>
+</div>
