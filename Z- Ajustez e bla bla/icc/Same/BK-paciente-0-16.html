@@ -1,0 +1,196 @@
+<!-- ========================== CSS FORMULÁRIO TUTOR DE INCAPAZ 0 A 16 ANOS ========================== -->
+<style>
+.formulario-tutor-016 {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.formulario-tutor-016 .aceite-termos input {
+  width: fit-content;
+}
+
+.formulario-tutor-016 label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #244968;
+}
+
+.formulario-tutor-016 input,
+.formulario-tutor-016 select,
+.formulario-tutor-016 textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-size: 16px;
+    color: #244968;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-tutor-016 input:focus,
+.formulario-tutor-016 select:focus,
+.formulario-tutor-016 textarea:focus {
+    border-color: #244968;
+    background-color: #fff;
+    outline: none;
+}
+
+.formulario-tutor-016 input[type="submit"] {
+    background-color: #a4ba1b;
+    color: #fff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+    display: inline-block;
+}
+
+.formulario-tutor-016 input[type="submit"]:hover {
+    background-color: #8fa216;
+    transform: translateY(-2px);
+}
+
+.formulario-tutor-016 h3 {
+    color: #244968;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.upload-obito-016 {
+    display: none;
+}
+</style>
+
+
+<!-- ========================== HTML FORMULÁRIO TUTOR DE INCAPAZ 0 A 16 ANOS ========================== -->
+<div class="formulario-tutor-016">
+
+<label> Nome do Solicitante*
+    [text* nome-solicitante]
+</label>
+
+<label> Telefone do Solicitante*
+    [tel* telefone-solicitante]
+</label>
+
+<label> E-mail do Solicitante*
+    [email* email-solicitante]
+</label>
+
+<label> Nome do Paciente*
+    [text* nome-paciente]
+</label>
+
+<label> Número do Prontuário do Paciente*
+    [text* prontuario-paciente]
+</label>
+
+<label>Tipo de prontuário*
+  [select* tipoprontuario include_blank "Integral" "Parcial"]
+</label>
+
+<label> Motivo da Solicitação*
+    [select* motivo "Benefício (INSS e afins)" "Transferência de tto" "Fins pessoais" "Óbitos (anexar certidão de óbito do paciente)" "Outros Motivos"]
+</label>
+
+<h3>Documentação</h3>
+<p><strong>Observação:</strong> Tipos de arquivos suportados: PNG, PDF, JPG E JPEG max 3mb</p>
+
+<label> Upload de Documentação de Identificação Pessoal do curador (RG E CPF, CNH OU CARTEIRAS DE CONSELHOS)*
+    [file* documento-curador-016 limit:3mb filetypes:pdf|jpg|png|jpeg]
+</label>
+
+<label> Upload de Documentação de Identificação Pessoal do paciente (RG E CPF, CNH OU CARTEIRAS DE CONSELHOS)*
+    [file* documento-paciente-016 limit:3mb filetypes:pdf|jpg|png|jpeg]
+</label>
+
+<label> Upload de Documentação de Identificação Pessoal do menor de 0 a 16anos (RG, CPF e Certidão de Nascimento)*
+    [file* documento-menor-016 limit:3mb filetypes:pdf|jpg|png|jpeg]
+</label>
+
+<label> Upload da foto do curador. (É preciso estar empunhando (tirar uma selfie) o documento pessoal para comprovação da autenticidade)*
+    [file* foto-curador-016 limit:3mb filetypes:pdf|jpg|png|jpeg]
+</label>
+
+<label>Paciente veio a óbito?
+    [select* obito-016 "Não" "Sim"]
+</label>
+
+<div class="upload-obito-016">
+<label> Upload da Certidão de Óbito*
+    [file certificado-obito-016 limit:3mb filetypes:pdf|jpg|png|jpeg]
+</label>
+</div>
+
+<label> <label>Detalhe sua necessidade (Quimioterapia, Radioterapia, Cirurgia, Exames não ambulatorial, Laudos/Biopsias e seu período)
+    [textarea observacoes-gerais]
+</label>
+
+<div class="aceite-termos">
+<label>
+    [acceptance aceito-termos] Declaro que as informações prestadas são verdadeiras e autorizo o processamento dos dados para fins de solicitação de documentos. [/acceptance]
+</label>
+</div>
+
+[submit "Enviar Solicitação"]
+</div>
+
+
+<!-- ========================== JAVASCRIPT FORMULÁRIO TUTOR DE INCAPAZ 0 A 16 ANOS ========================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    
+    const selectObito = document.querySelector('select[name="obito-016"]');
+    const campoObito = document.querySelector('.upload-obito-016');
+
+    const inputObito = campoObito.querySelector('input[type="file"]');
+
+    // Verificar se os inputs existem
+    if (!inputObito) {
+        console.error("Erro: Não foi possível localizar os campos de upload.");
+        return;
+    }
+
+    // Função para verificar qual input deve ser mostrado
+    function verificarMotivo() {
+        if (selectObito.value === "Sim") {
+        campoObito.style.display = 'block';
+        } else {
+        campoObito.style.display = 'none';
+        }
+    }
+
+    if (selectObito) {
+        selectObito.addEventListener('change', verificarMotivo);
+        verificarMotivo();
+    }
+
+    const phoneMaskBehavior = function (val) {
+        return val.replace(/\D/g, '').length > 10 ? '+00 (00) 00000-0000' : '+00 (00) 0000-00009';
+    };
+    const phoneOptions = {
+        onKeyPress: function(val, e, field, options) {
+            $(field).mask(phoneMaskBehavior.apply({}, arguments), options);
+        }
+    };
+
+    formulario.find('input[name="telefone-solicitante"]').mask(phoneMaskBehavior, phoneOptions);
+    formulario.find('input[name="prontuario-paciente"]').mask('000000000000000');
+});
+
+</script>
