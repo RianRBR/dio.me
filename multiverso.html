@@ -1,0 +1,571 @@
+<?php
+
+/**
+ * Template Name: Home
+ */
+get_header(); ?>
+
+<style>
+  div#general main section#destaque {
+    height: 100vh;
+    min-height: 600px
+  }
+</style>
+
+<main>
+  <?php if($_GET["V"]==1): ?>
+  <div class="novo-banner">
+    <div class="owl-novo-banner owl-carousel owl-theme">
+      <?php 
+        $query = new WP_Query( array( 'post_type' => 'banners', 'posts_per_page' => 10 ) ); 
+        while ( $query->have_posts() ) : $query->the_post();
+        $titulo = get_field('titulo', get_the_ID());
+        $texto = get_field('texto', get_the_ID());
+        $texto_botao = get_field('texto_botao', get_the_ID());
+        $link_botao = get_field('link_botao', get_the_ID());
+        $aba = get_field('aba', get_the_ID()) ? "target='_blank'" : "";
+        $background = get_field('background', get_the_ID());
+        $iframe = get_field('iframe', get_the_ID());
+        $background_mobile = get_field('background_mobile', get_the_ID());
+      ?>
+      <div class="item-banner <?php echo ($iframe) ? 'has-video' : ''; ?>">
+        <?php if($link_botao && !$texto_botao): ?>
+        <a href="<?php echo $link_botao; ?>" <?php echo $aba; ?>>
+          <?php endif; ?>
+          <img src="<?php echo $background["url"]; ?>" alt="<?php echo $background["alt"]; ?>"
+            class="<?php echo $background_mobile ? "desktop" : ""; ?>">
+          <?php if($background_mobile): ?>
+          <img src="<?php echo $background_mobile["url"]; ?>" alt="<?php echo $background_mobile["alt"]; ?>"
+            class="mobile">
+          <?php endif; ?>
+          <div class="container">
+            <div class="content">
+              <h2><?php echo $titulo; ?></h2>
+              <p><?php echo $texto; ?></p>
+              <?php if($texto_botao): ?>
+              <a href="<?php echo $link_botao; ?>" <?php echo $aba; ?> class="btn"><?php echo $texto_botao; ?></a>
+              <?php endif; ?>
+            </div>
+            <?php if($iframe): ?>
+            <div class="video">
+              <?php echo $iframe; ?>
+            </div>
+            <?php endif; ?>
+          </div>
+          <?php if($link_botao && !$texto_botao): ?>
+        </a>
+        <?php endif; ?>
+      </div>
+
+      <?php endwhile; ?>
+    </div>
+  </div>
+
+  <?php 
+    if(is_front_page()): // Se for chamado pela HOME ou INTERNA 
+      $lugar = "option";    
+    else: 
+      $lugar = "";
+    endif;
+    
+    if( have_rows('blocos_da_pagina', $lugar) ): 
+    while( have_rows('blocos_da_pagina', $lugar) ): the_row();  
+      echo get_template_part( './blocos/'.get_row_layout() );
+    endwhile;
+    endif;
+  ?>
+
+
+  <?php else: ?>
+  <section id="destaque">
+    <div class="mask">
+      <div class="info info-topo-video">
+        <!-- <img src="<?php bloginfo('template_url'); ?>/assets/img/logo-cobrand.png" alt="Multiverso"
+          class="logo2 farol-info">  -->
+
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.webp" alt="Multiverso" style="display: none;"
+          class="logo2 normal-info matricula-info farol-info novo-banner-6">
+
+          <img src="https://multiversoeducacao.com.br/wp-content/uploads/2025/09/matriculas-2026.webp" alt="Multiverso" style="display: none; margin-top: 50px; margin-bottom: 10px"
+          class="logo2 nova-info ">
+
+          <img src="https://multiversoeducacao.com.br/wp-content/uploads/2025/09/rematricula-multiverso.webp" alt="Multiverso" style="display: none; margin-top: 50px;margin-bottom: 10px"
+          class="logo2 novo-banner-5">
+
+          
+
+        <!-- <img src="https://multiversoeducacao.com.br/wp-content/uploads/2024/11/logo-espaco-ativo-home.png" alt="Multiverso" style="display: none;"
+        class="novo-banner-5">
+
+
+        <p class="descricao-banner farol-info">
+          Indique outra família para a Rede Multiverso e receba uma recompensa especial.
+        </p>
+         
+       <!--  <p class="descricao-banner nova-info">
+          Saiba como inserir de forma saudável o uso de telas na rotina do seu filho
+        </p> -->
+
+        <p class="descricao-banner matricula-info" style="margin-bottom: 10px">
+          Mais colégios, uma grande rede de apoio
+        </p>
+
+        <p class="descricao-banner nova-info" style="margin-bottom: 10px">
+        </p>
+
+        <p class="descricao-banner novo-banner-5" style="margin-bottom: 10px">
+         
+        </p>
+       
+        <!-- <p class="descricao-banner novo-banner-6" style="margin-bottom: 10px">
+          Conheça a nova unidade: Multiverso Montese
+        </p> -->
+
+
+        <!-- <img class="farol-info selo-farol" src="<?php echo bloginfo( "template_url"); ?>/assets/img/selo-farol.png"
+          alt=""> -->
+        <div class="btns">
+          <!-- Muda aqui o link -->
+          <a href="https://somos.multiversoeducacao.com.br/indique-e-ganhe?bid=JWRWO" class="bt farol-info"
+            target="_blank">
+            Indique agora</a> 
+          <!-- <a data-fancybox href="#myVideo2" class="bt btn-play-video normal-info farol-info"><i
+              class="fa-solid fa-play "></i>
+            assistir
+            vídeo
+            completo</a> -->
+            <!--data-fancybox #myVideo4 -->
+          <a target="_blank" href="https://somos.multiversoeducacao.com.br/lp-campanha-de-matriculas-2026"
+            class="bt matricula-info"><!-- <i
+              class="fa-solid fa-play "></i> -->
+           <!--  Assistir ao vídeo completo -->Agende sua visita</a><br>
+             <a target="_blank" href="https://www.youtube.com/watch?v=T72HUyLzIWw"
+            class="bt matricula-info"><!-- <i
+              class="fa-solid fa-play "></i> -->
+           <!--  Assistir ao vídeo completo -->Assistir video completo</a>
+          <a href="https://somos.multiversoeducacao.com.br/lp-campanha-de-matriculas-2026" target="_blank" class="bt nova-info"
+            style="margin-top: 0px;">
+            Agende sua visita</a>
+        
+            <a href="https://colegiouniverso152981.rm.cloudtotvs.com.br/FrameHTML/Web/App/Edu/PortalEducacional/login/" target="_blank" class="bt novo-banner-5" style="margin-top: 20px;">
+              Faça sua rematricula
+            </a>
+
+            <!-- <a href="https://multiversoeducacao.com.br/montese/" target="_blank" class="bt novo-banner-6" style="margin-top: 20px;">
+              Saiba mais
+            </a> -->
+        </div>
+        
+        <div class="video-options">
+          <span class="option-3 active" onclick="changeVideo(3)"></span>
+          <span class="option-4" onclick="changeVideo(4)"></span>
+          <!-- <span class="option-2" onclick="changeVideo(2)"></span> -->
+          <span class="option-5" onclick="changeVideo(5)"></span>
+          <!-- <span class="option-6" onclick="changeVideo(6)"></span> -->
+          <!-- <span class="option-0" onclick="changeVideo(0)"></span>
+          <span class="option-1" onclick="changeVideo(1)"></span>  -->
+        </div>
+
+        <span class="bounce-3"><img src="<?php bloginfo('template_url'); ?>/assets/img/arrow-down-multiverso.svg"
+            alt="Descer"></span>
+
+        <video width="640" height="320" controls id="myVideo2" style="display:none;">
+          <source src="<?php bloginfo('template_url'); ?>/assets/videos/video4.mp4" type="video/mp4">
+          
+          Your browser doesn't support HTML5 video tag.
+        </video>
+
+        <!-- <video width="640" height="320" controls id="myVideo0" style="display:none;"> -->
+          <!-- <source src="<?php bloginfo('template_url'); ?>/assets/videos/video.mp4" type="video/mp4"> -->
+          <!-- <source src="<?php bloginfo('template_url'); ?>/assets/videos/video-manifesto-multiverso.mp4"
+            type="video/mp4">
+
+          Your browser doesn't support HTML5 video tag.
+        </video>
+        <video width="640" height="320" controls id="myVideo1" style="display:none;">
+          <source src="<?php bloginfo('template_url'); ?>/assets/videos/video2.mp4" type="video/mp4">
+
+          Your browser doesn't support HTML5 video tag.
+        </video>
+        <video width="640" height="320" controls id="myVideo4" style="display:none;">
+          <source src="<?php bloginfo('template_url'); ?>/assets/videos/video4.mp4" type="video/mp4">
+
+          Your browser doesn't support HTML5 video tag.
+        </video> -->
+
+      </div>
+
+    </div>
+
+    <video class="home-video home-video-3" autoplay loop muted playsinline>
+      <source src="https://multiversoeducacao.com.br/wp-content/uploads/2025/09/mais-colegios-uma-grande-rede-de-apoio1.mp4" type="video/mp4">
+    </video>
+
+    <img class="home-video home-video-4" style="" src="https://multiversoeducacao.com.br/wp-content/uploads/2025/09/banner-2-multiverso.webp" alt="">
+
+    <!-- <img class="home-video home-video-2" style="" src="https://multiversoeducacao.com.br/wp-content/uploads/2024/09/P3.jpg" alt="">
+ -->
+    <img class="home-video home-video-5" style="" src="https://multiversoeducacao.com.br/wp-content/uploads/2025/09/banner-3-multiverso.webp" alt="">
+
+    <!-- <img class="home-video home-video-6" style="" src="https://multiversoeducacao.com.br/wp-content/uploads/2025/03/colegio-montese.webp" alt="">
+     -->
+    <!-- <video class="home-video home-video-4" autoplay loop muted playsinline>
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/video3.mp4" type="video/mp4">
+    </video> 
+
+    <video class="home-video home-video-2 active" autoplay loop muted playsinline>
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/video3.mp4" type="video/mp4">
+    </video>
+
+    <video class="home-video home-video-0" autoplay loop muted playsinline>
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/video.mp4" type="video/mp4">
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/video.ogg" type="video/ogg" />
+    </video>
+
+    <video class="home-video home-video-1" autoplay loop muted playsinline>
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/video2.mp4" type="video/mp4">
+    </video> -->
+    
+  </section>
+  <script defer>
+  /* function changeVideo(id) {
+    console.log("change to" + id)
+    let videos = document.querySelectorAll('.home-video.active');
+    let newActive = document.querySelector('.home-video-' + (id));
+    videos.forEach((video) => {
+      video.classList.remove('active');
+    });
+    newActive.classList.add('active');
+
+    let options = document.querySelectorAll('.video-options span.active');
+    let newActiveOption = document.querySelector('.video-options span.option-' + (id));
+    options.forEach((option) => {
+      option.classList.remove('active');
+    });
+    newActiveOption.classList.add('active');
+    if (id == 4) {
+      let normal = document.querySelectorAll('.normal-info');
+      let nova = document.querySelectorAll('.nova-info');
+      let farol = document.querySelectorAll('.farol-info');
+      let matricula = document.querySelectorAll('.matricula-info');
+      let infoTopo = document.querySelector('.info-topo-video');
+      infoTopo.style.opacity = 1;
+      if (normal) {
+        normal.forEach((item) => {
+          item.style.display = "none";
+        });
+      }
+      if (farol) {
+        farol.forEach((item) => {
+          item.style.display = "none";
+        });
+      }
+      if (matricula) {
+        matricula.forEach((item) => {
+          item.style.display = "none";
+        });
+      }
+      nova.forEach((item) => {
+        item.style.display = "block";
+      });
+    } else if (id == 3) {
+      let normal = document.querySelectorAll('.normal-info');
+      let nova = document.querySelectorAll('.nova-info');
+      let farol = document.querySelectorAll('.farol-info');
+      let matricula = document.querySelectorAll('.matricula-info');
+      let infoTopo = document.querySelector('.info-topo-video');
+      infoTopo.style.opacity = 1;
+      normal.forEach((item) => {
+        item.style.display = "none";
+      });
+      farol.forEach((item) => {
+        item.style.display = "none";
+      });
+      nova.forEach((item) => {
+        item.style.display = "none";
+      });
+      matricula.forEach((item) => {
+        item.style.display = "block";
+      });
+
+
+    } else if (id == 2) {
+      let matricula = document.querySelectorAll('.matricula-info');
+      let normal = document.querySelectorAll('.normal-info');
+      let nova = document.querySelectorAll('.nova-info');
+      let farol = document.querySelectorAll('.farol-info');
+      let infoTopo = document.querySelector('.info-topo-video');
+      infoTopo.style.opacity = 1;
+      normal.forEach((item) => {
+        item.style.display = "none";
+      });
+      matricula.forEach((item) => {
+        item.style.display = "none";
+      });
+      nova.forEach((item) => {
+        item.style.display = "none";
+      });
+      farol.forEach((item) => {
+        item.style.display = "block";
+      });
+    } else {
+      let matricula = document.querySelectorAll('.matricula-info');
+      let normal = document.querySelectorAll('.normal-info');
+      let nova = document.querySelectorAll('.nova-info');
+      let farol = document.querySelectorAll('.farol-info');
+      let infoTopo = document.querySelector('.info-topo-video');
+      infoTopo.style.opacity = 0.6;
+      farol.forEach((item) => {
+        item.style.display = "none";
+      });
+      nova.forEach((item) => {
+        item.style.display = "none";
+      });
+      matricula.forEach((item) => {
+        item.style.display = "none";
+      });
+      normal.forEach((item) => {
+        item.style.display = "block";
+      });
+    }
+
+    let btn = document.querySelector('.btn-play-video');
+    btn.setAttribute('href', '#myVideo' + (id));
+  }
+  document.addEventListener("DOMContentLoaded", function(event) {
+    changeVideo(3);
+  }); */
+
+
+  function changeVideo(id) {
+  console.log("change to" + id);
+  let videos = document.querySelectorAll(".home-video.active");
+  let newActive = document.querySelector(".home-video-" + id);
+  videos.forEach((video) => {
+    video.classList.remove("active");
+  });
+  newActive.classList.add("active");
+
+  let options = document.querySelectorAll(".video-options span.active");
+  let newActiveOption = document.querySelector(".video-options span.option-" + id);
+  options.forEach((option) => {
+    option.classList.remove("active");
+  });
+  newActiveOption.classList.add("active");
+
+  let normal = document.querySelectorAll(".normal-info");
+  let nova = document.querySelectorAll(".nova-info");
+  let farol = document.querySelectorAll(".farol-info");
+  let matricula = document.querySelectorAll(".matricula-info");
+  let novoBanner = document.querySelectorAll(".novo-banner-5");
+  let novoBannerSeis = document.querySelectorAll(".novo-banner-6");
+  let infoTopo = document.querySelector(".info-topo-video");
+
+  infoTopo.style.opacity = 1;
+
+  // Reset all descriptions
+  [normal, nova, farol, matricula, novoBanner, novoBannerSeis].forEach((group) => {
+    group.forEach((item) => {
+      item.style.display = "none";
+    });
+  });
+
+  // Show elements based on the active banner
+  if (id == 3) {
+    matricula.forEach((item) => {
+      item.style.display = "block";
+    });
+  } else if (id == 4) {
+    nova.forEach((item) => {
+      item.style.display = "block";
+    });
+  } else if (id == 2) {
+    farol.forEach((item) => {
+      item.style.display = "block";
+    });
+  } else if (id == 5) {
+    novoBanner.forEach((item) => {
+      item.style.display = "block";
+    });
+  } else if (id == 6) {
+    novoBannerSeis.forEach((item) => {
+      item.style.display = "block";
+    });
+  } else {
+    normal.forEach((item) => {
+      item.style.display = "block";
+    });
+    infoTopo.style.opacity = 0.6;
+  }
+
+  let btn = document.querySelector(".btn-play-video");
+  if (btn) {
+    btn.setAttribute("href", "#myVideo" + id);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  changeVideo(3); // Set initial banner
+});
+
+
+
+  </script>
+
+  <section id="manifesto">
+    <div class="left">
+      <h2>Nosso<br> Manifesto</h2>
+    </div>
+    <div class="right">
+      <p>
+        Cada escola é um universo de ações e paixões pela educação e nós somos os
+        agentes e o resultado delas.<br><br>
+
+        Aprendemos que alinhados com a gestão podemos transformar uni em multi.<br><br>
+
+        Somos jovens e já nascemos com mais de 38 anos de experiência nesse
+        universo e vamos compartilhar nosso conhecimento para impactar ainda mais
+        pessoas através da educação acessível e de qualidade.<br><br>
+
+        Apaixonados pela educação, acreditamos que através das conexões, os elos
+        constroem um legado mais sólido.<br><br>
+
+        Somos parceiros do seu legado. Somos gestores para seu universo.<br><br>
+
+        Muito prazer, somos Multiverso Educação!
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <div class="item">
+        <h3>Missão</h3> <small>Desenvolver líderes, compartilhando conhecimento com educadores<br> convictos de
+          que
+          construímos diariamente uma sociedade civilizada.</small>
+      </div>
+      <div class="item" style="padding-left: 100px;">
+        <h3>Visão</h3> <small>Ser a rede de ensino no Brasil para famílias que buscam formação<br> inovadora,
+          integral e
+          acessível.</small>
+      </div>
+      <div class="item item-proposito" style="padding-left: 200px;display: flex;">
+        <h3>Propósito</h3><small>Promover ensino de qualidade e acessível, desenvolvendo líderes e 
+		  atuando como rede de apoio às nossas famílias.</small>
+      </div>
+    </div>
+  </section>
+  <section id="diferenciais">
+    <div class="left">
+      <h2>Nossos<br> Diferenciais</h2>
+    </div>
+    <div class="wrapper">
+      <div class="right">
+        <div class="item">
+          <div class="number">
+            1.
+          </div>
+          <div class="text">
+            <h3>Paixão<br> Pela Educação</h3>
+            <small>Investimos continuamente em ensino de qualidade, material didático e corpo
+              docente.</small>
+          </div>
+        </div>
+        <div class="item">
+          <div class="number">
+            2.
+          </div>
+          <div class="text">
+            <h3>Atuação<br> Personalizada</h3>
+            <small>Nosso modelo com foco em escolas de médio porte nos permite atuar próximos aos alunos e a
+              família.
+              Nossa filosofia de ensino consiste em “cuidar como família”.</small>
+          </div>
+        </div>
+        <div class="item">
+          <div class="number">
+            3.
+          </div>
+          <div class="text">
+            <h3>Inovação e Capacidade<br> de Gestão</h3>
+            <small>Experiência em gestão de escolas. <br> Equipe profissional. <br>Processos e ferramentas
+              de
+              governança.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="parceiros">
+
+    <div class="secDestaques wrapper falam-sobre">
+      <h2>O QUE FALAM SOBRE NÓS</h2>
+
+
+      <?php 
+                    $args = array(
+                        'post_type' => 'posts_externos',
+                        'posts_per_page' => 9,
+                        'tax_query' => array(
+                          array(
+                            'taxonomy' => 'category', //double check your taxonomy name in you dd 
+                            'field'    => 'id',
+                            'terms'    => 5,
+                          ),
+                        ),
+                      );
+                      $query = new WP_Query($args); ?>
+
+      <div class="owl-falam-sobre-nos owl-carousel owl-theme post-container">
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
+        <?php
+                    $dataPostada = get_field('data_postada', get_the_ID());
+                    $link_externo = get_field('link_externo', get_the_ID());
+                    $texto_botao = get_field('texto_botao', get_the_ID());
+                    ?>
+        <div class="item">
+          <a href="<?php echo $link_externo ?>" target="_blank" class="img">
+            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), "large"); ?>" alt="<?php the_title(); ?>">
+          </a>
+          <div class="text">
+            <h3><?php echo wp_trim_words( get_the_title(), 15, '...' );?></h3>
+            <p class="excerpt"><?php echo get_the_excerpt(); ?></p>
+            <a href="<?php echo $link_externo ?>" target="_blank" class="bt"><?php echo $texto_botao; ?></a>
+          </div>
+        </div>
+        <?php endwhile; ?>
+      </div>
+
+      <a href="https://multiversoeducacao.com.br/multiverso-na-midia/" class="bt fc allPosts">Ver todos</a>
+    </div>
+    <div class="wrapper">
+      <h2>Parceiros</h2>
+
+      <div class="owl-carousel owl-theme part">
+        <div class="item">
+          <span>
+            <a href="https://www.somoseducacao.com.br/solucoes/ph/" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro1.png" alt="Part">
+            </a>
+          </span>
+        </div>
+        <div class="item">
+          <span>
+            <a href="https://www.olideremmim.com.br/" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro2.png" alt="Part">
+            </a>
+          </span>
+        </div>
+        <!-- <div class="item"><span><img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro1.png" alt="Part"></span></div>
+            <div class="item"><span><img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro2.png" alt="Part"></span></div>
+            <div class="item"><span><img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro1.png" alt="Part"></span></div>
+            <div class="item"><span><img src="<?php bloginfo('template_url'); ?>/assets/img/parceiro2.png" alt="Part"></span></div> -->
+      </div>
+
+      <a href="#" class="bt fc openpop">fale conosco</a>
+    </div>
+  </section>
+  <?php endif; ?>
+</main>
+
+<?php get_footer(); ?>
