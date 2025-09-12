@@ -140,6 +140,7 @@ section {
         transform: translate(-50%, -25px);
         display: flex;
         justify-content: space-between;
+        z-index: 99;
 
         & button:nth-child(1) {
             transform: scale(-1);
@@ -152,6 +153,7 @@ section {
             border-radius: 50%;
             border: none;
             cursor: pointer;
+            transition:  all ease-in 0.5s ;
             
             & img {
                 width: 30px;
@@ -160,7 +162,7 @@ section {
             }
             &:hover {
                 background-color: #beff1b;
-                transition: 0.5s;
+                
             }
         }
     }
@@ -206,4 +208,29 @@ section {
 
     }
 
+}
+
+
+section {
+    & .list{
+
+        & .item{
+            transform: translateX(100vw);
+            transition: all ease-in 0.5s;
+
+            & .car-img{
+                & img{
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.5s;
+
+                }
+            }
+            & .content{
+
+            }
+
+        }
+
+    }
 }
