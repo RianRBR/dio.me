@@ -1,17 +1,17 @@
 https://markcontabil.com.br/gestao-financeira/
-https://clientes.atratis.com.br/dev/markcontabil/servicos/gestao-financeira/
+https://markcontabil.com.br/servicos/gestao-financeira/
 
 https://markcontabil.com.br/assessoria-contabil/
-https://clientes.atratis.com.br/dev/markcontabil/servicos/setor-contabil/
+https://markcontabil.com.br/servicos/setor-contabil/
 
 https://markcontabil.com.br/assessoria-fiscal/
-https://clientes.atratis.com.br/dev/markcontabil/servicos/setor-fiscal/
+https://markcontabil.com.br/servicos/setor-fiscal/
 
 https://markcontabil.com.br/assessoria-area-trabalhista/
-https://clientes.atratis.com.br/dev/markcontabil/servicos/setor-pessoal/
+https://markcontabil.com.br/servicos/setor-pessoal/
 
 https://markcontabil.com.br/assessoria-societaria/
-https://clientes.atratis.com.br/dev/markcontabil/servicos/setor-societario/
+https://markcontabil.com.br/servicos/setor-societario/
 
 https://markcontabil.com.br/news/
 https://markcontabil.com.br/
