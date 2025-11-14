@@ -2,11 +2,11 @@
 
 
 function aplicarDesconto(valor, desconto) {
-    return valor - (valor * desconto / 100);
+    return valor - (valor * (desconto / 100));
 }
 
 function aplicarJuros(valor, juros) {
-    return valor + (valor * juros / 100);
+    return valor + (valor * (juros / 100)) ;
 }
 
 const valorProduto = 200;

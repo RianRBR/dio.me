@@ -1,0 +1,62 @@
+<?php /* Template Name: Página Trabalhe Conosco */ ?>
+<?php get_template_part('templates/html','header'); ?>
+
+<?php while (have_posts()) : the_post(); 
+    $desc_page = get_post_meta( get_the_id(), 'desc_page', true);
+    $img_destaque = get_post_meta( get_the_id(), 'img_destaque', false);
+    $img_certificacoes = get_post_meta( get_the_id(), 'img_certificacoes', false);
+?>
+
+<div class="cm-page cm-page--interna">
+
+    <section class="cm-banner-interna">
+        <?php the_post_thumbnail( 'full', array( 'class' => 'cm-banner-interna__blog', 'alt' => get_the_title(), 'title' => get_the_title() ) ); ?>
+        <div class="container">
+            <div class="cm-banner-interna__info">
+                <div class="cm-banner-interna__informacoes wow fadeIn">
+                    
+                    <h2 class="cm-banner-interna__title"><?php the_title(); ?></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cm-section">
+        <div class="container">
+            
+            <div class="cm-trab-conosco-content">
+                <h2 class="cm-header-section__titleblue">
+                    <?php the_content(); ?>
+                </h2>
+
+            </div>
+            <div class="cm-trab-conosco-valores">
+
+                <figure class="cm-trab-conosco-valores__img">
+                    <?php foreach ($img_destaque as $img) :
+                        echo wp_get_attachment_image( $img, 'full', "", array( 'class' => 'cm-trab-conosco-valores__thumb', 'alt' => get_the_title(), 'title' => get_the_title())); endforeach; 
+                    ?>
+                
+                </figure>
+                
+                <div class="cm-trab-conosco-valores__info">
+                    <?php echo $desc_page; ?>
+                    <a class="cm-trab-conosco-valores__link cm-btn cm-btn--blue" href="http://rh.casamagalhaes.com.br:8080/fortesrh/externo/prepareLogin.action?solicitacao.id=1648&empresaId=1&fbclid=IwAR0EbywR03by1cWbRNsEHkaz-J7mzIMIPvQlJwuaRq7A_0tXwAPsjh18kmI" target="_blank">Cadastre seu currículo</a> 
+                </div>
+
+            </div>
+            <div class="cm-trab-conosco-valores__certificacoes">
+                <?php foreach ($img_certificacoes as $img) :
+                    echo wp_get_attachment_image( $img, 'full', "", array( 'class' => 'cm-trab-conosco-valores__thumb', 'alt' => get_the_title(), 'title' => get_the_title())); endforeach; 
+                ?>
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+<?php endwhile; ?>
+
+<?php get_template_part('templates/html','footer');?>
