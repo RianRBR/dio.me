@@ -1,0 +1,17 @@
+https://www.reali.srv.br/correspondente-bancaria/
+https://clientes.atratis.com.br/dev/reali/correspondente-bancario/
+
+https://www.reali.srv.br/filiais/
+https://clientes.atratis.com.br/dev/reali/enderecos/
+
+https://www.reali.srv.br/cartao-consignado/
+https://clientes.atratis.com.br/dev/reali/solucoes/cartao-de-credito-consignado-e-cartao-beneficio/
+
+https://www.reali.srv.br/portabilidade/
+https://clientes.atratis.com.br/dev/reali/solucoes/emprestimo-consignado-clt/
+
+https://www.reali.srv.br/refin/
+https://clientes.atratis.com.br/dev/reali/solucoes/credito-pessoal/
+
+https://www.reali.srv.br/category/noticias/
+https://clientes.atratis.com.br/dev/reali/blog/
