@@ -1,0 +1,135 @@
+Roteirizze: id="b8f6688" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail corporativo: id="validbtnemail"
+    Empresa: id="empresa"
+    Quantidade de vendedores: id="qntd"
+    quiz-math: id="quiz-math"
+    Qual seu principal interesse em conversar com a gente?: id="mensagem"
+    Solicitar contato: id="validbtnenviar"
+
+}
+
+E-pedidos: id="44c5246" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail corporativo: id="validbtnemail"
+    Empresa: id="empresa"
+    Quantidade de vendedores: id="qntd"
+    quiz-math: id="quiz-math"
+    Qual seu principal interesse em conversar com a gente?: id="mensagem"
+    Solicitar contato: id="validbtnenviar"
+}
+
+Monitore: id="c1410de" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail corporativo: id="validbtnemail"
+    Empresa: id="empresa"
+    Quantidade de vendedores: id="qntd"
+    quiz-math: id="quiz-math"
+    Qual seu principal interesse em conversar com a gente?: id="mensagem"
+    Solicitar contato: id="validbtnenviar"
+}
+
+Poliequipes: id="592989d" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail corporativo: id="validbtnemail"
+    Empresa: id="empresa"
+    Quantidade de vendedores: id="qntd"
+    quiz-math: id="quiz-math"
+    Qual seu principal interesse em conversar com a gente?: id="mensagem"
+    Solicitar contato: id="validbtnenviar"
+}
+
+Poliatividades: id="dc837b8" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail corporativo: id="validbtnemail"
+    Empresa: id="empresa"
+    Quantidade de vendedores: id="qntd"
+    quiz-math: id="quiz-math"
+    Qual seu principal interesse em conversar com a gente?: id="mensagem"
+    Solicitar contato: id="validbtnenviar"
+}
+
+Solicite proposta: id="3a5c0f6" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail: id="validbtnemail"
+    Empresa: id="empresa"
+    Cargo: id="cargo"
+    Mensagem: id="mensagem"
+    Solicitar contato / Enviar Mensagem: id="validbtnenviar"
+}
+
+Fale conosco: id="6285632" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail: id="validbtnemail"
+    Empresa: id="empresa"
+    Cargo: id="cargo"
+    Mensagem: id="mensagem"
+    Enviar Mensagem: id="validbtnenviar"
+}
+Portal do titular: id="d61102d" {
+    Nome: id="nome"
+    CPF: id="cpf"
+    Data de Nascimento: id="nascimento"
+    E-mail: id="email"
+    Telefone: id="telefone"
+    Objeto da solicitação: id="solicitacao"
+    Detalhes da solicitação: id="mensagem"
+    quiz-math: id="quiz-math"
+}
+
+Newsletter (rodapé): id="7e9ce4d" {
+    E-mail: id="validbtnemail"
+    quiz-math: id="quiz-math"
+    aceitacao: id="aceitacao"
+    Assinar: id="validbtnenviar"
+}
+
+Indústria: id="8837f7c" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail: id="validbtnemail"
+    Empresa: id="empresa"
+    Segmento: id="segmento"
+    Cargo: id="cargo"
+    CNPJ: id="cnpj"
+    Quantidade de representantes ou vendedores: id="qntd"
+    Tem ERP?: id="erp"
+    quiz-math: id="quiz-math"
+    aceitacao: id="aceitacao"
+    AGENDAR DEMONSTRAÇÃO: id="validbtnenviar"
+}
+
+Distributor: id="74816f6" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail: id="validbtnemail"
+    Empresa: id="empresa"
+    Segmento: id="segmento"
+    Cargo: id="cargo"
+    CNPJ: id="cnpj"
+    Quantidade de representantes ou vendedores: id="qntd"
+    Tem ERP?: id="erp"
+    aceitacao: id="aceitacao"
+    AGENDAR DEMONSTRAÇÃO: id="validbtnenviar"
+}
+Atacado: id="ec41bd3" {
+    Nome: id="nome"
+    Telefone: id="telefone"
+    E-mail: id="validbtnemail"
+    Empresa: id="empresa"
+    Segmento: id="segmento"
+    Cargo: id="cargo"
+    CNPJ: id="cnpj"
+    Quantidade de representantes ou vendedores: id="qntd"
+    Tem ERP?: id="erp"
+    quiz-math: id="quiz-math"
+    aceitacao: id="aceitacao"
+    AGENDAR DEMONSTRAÇÃO: id="validbtnenviar"
+}
