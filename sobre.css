@@ -1,0 +1,42 @@
+.page-id-6414 {
+
+    & .blocoMidiaTexto {
+        padding: 10px 0;
+    }
+
+    & .secao-texto-coluna {
+        padding: 10px 0;
+    }
+    & .blocoMidiaTexto .owl-carousel{
+        margin-bottom:0;
+    }
+
+    & .secaoGaleriaMidia{
+        padding: 1px 0;
+    }
+
+    /* Wrapper do conteúdo */
+    & .atratis-historia-wrapper {
+  position: relative;
+  
+}
+
+/* Selo do Twitter */
+    & .atratis-selo-twitter {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 64px;
+  height: 64px;
+  transform: rotate(-12deg);
+  z-index: 10;
+  pointer-events: none; /* não interfere em clique ou seleção */
+}
+
+    & .atratis-selo-twitter img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+}
