@@ -10,9 +10,9 @@ notas.push(5);
 
 console.log(notas.length); // Exibe o tamanho do array  */
 
-const nome = "Rian Reuber Faustino";
+//const nome = "Rian Reuber Faustino";
+const multiplicador = 51.2;
 
-
-for (let i = 0; i < 10; i++) {
-    console.log(i);
+for (let i = 1; i <= 10; i++) {
+    console.log( i* multiplicador)    
 }

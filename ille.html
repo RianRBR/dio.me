@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case Ille Arquitetura - Arquitetura autoral traduzida em uma experiência digital estratégica. Veja como a Atratis reposicionou a marca digitalmente.">
+    <meta name="keywords" content="Ille Arquitetura, Atratis, Arquitetura autoral, Digital, Website, Branding, Design">
+    <title>Case Ille Arquitetura</title>
+    <style>
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Cores principais */
+        :root {
+            --primary-color: #AA4810;
+            --secondary-color: #CCAF6B;
+            --background-color: #ffffff;
+            --text-color: #333;
+            --dark-background: #2A2A2A;
+        }
+
+        /* Header */
+        header {
+            height: 100vh;
+            background: linear-gradient(120deg, #AA4810, #CCAF6B);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+            background-image: url('https://illearquitetura.com.br/img/projetos/projeto1.jpg'); /* Imagem de Arquitetura (substitua pela imagem desejada) */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: 300;
+        }
+
+        /* Blocos e Seções */
+        section {
+            width: 100%;
+            margin: 50px 0;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        /* Caixa de Texto */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Blocos Interativos */
+        .interactive-block {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .interactive-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .interactive-block h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .interactive-block p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Animações */
+        .animation-block {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .animation-block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Depoimentos */
+        .quote {
+            background: #fafafa;
+            border-left: 10px solid var(--primary-color);
+            padding: 30px;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #777;
+            margin: 50px auto;
+            max-width: 800px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-footer {
+            text-align: right;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+
+        /* CTA */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-background);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .cta-btn {
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Case Ille Arquitetura</h1>
+        <p>Arquitetura autoral traduzida em uma experiência digital estratégica</p>
+    </header>
+
+    <section id="contexto" class="animation-block">
+        <h2 class="section-title">Contexto e Desafio</h2>
+        <p class="section-description">A Ille Arquitetura nasce como a nova marca da arquiteta Camille Boavista, marcando um novo momento profissional e um reposicionamento claro no mercado. O desafio não era apenas “ter um site”, mas materializar digitalmente um posicionamento sofisticado, que conecta arquitetura, arte e moda, e apresentar essa proposta de forma clara, criativa e coerente.</p>
+        <div class="interactive-block">
+            <h3>O Desafio:</h3>
+            <p>O site precisava ir além de um simples cartão de visitas, funcionando como a base para uma estratégia digital de longo prazo, capaz de refletir o estilo único da arquiteta e sua visão inovadora.</p>
+        </div>
+    </section>
+
+    <section id="estrategia" class="animation-block">
+        <h2 class="section-title">Estratégia Definida pela Atratis</h2>
+        <p class="section-description">O projeto foi pensado como uma construção estratégica para reposicionar digitalmente a marca, com foco em reforçar a autoridade e destacar a proposta autoral da arquiteta. O site e as ações digitais precisavam ser alinhados, não só com a estética da marca, mas também com a estratégia de marketing digital.</p>
+        <div class="interactive-block">
+            <h3>A estratégia da Atratis:</h3>
+            <p>O site foi planejado como um elemento central para um branding sofisticado, com uma arquitetura de informações intuitiva e clara.</p>
+        </div>
+    </section>
+
+    <section id="solucao" class="animation-block">
+        <h2 class="section-title">Solução Entregue</h2>
+        <p class="section-description">Desenvolvemos um site institucional com foco em posicionamento estratégico e experiência do usuário, destacando a essência da Ille Arquitetura.</p>
+        <div class="interactive-block">
+            <h3>A Solução:</h3>
+            <p>O site foi projetado com ênfase no design minimalista, fluidez na navegação e integração com os canais de mídia paga e orgânica.</p>
+        </div>
+    </section>
+
+    <section id="resultados" class="animation-block">
+        <h2 class="section-title">Resultados e Impactos</h2>
+        <p class="section-description">Com o lançamento do novo site, conseguimos fortalecer o posicionamento da marca, atrair novos clientes e criar uma base sólida para ações futuras.</p>
+        <ul>
+            <li>Clareza e sofisticação desde o primeiro contato</li>
+            <li>Fortalecimento da marca pessoal da arquiteta</li>
+            <li>Base sólida para tráfego e SEO</li>
+        </ul>
+    </section>
+
+    <section id="depoimento" class="quote">
+        <p>“A Atratis conseguiu traduzir exatamente o momento que eu estava vivendo como profissional. O site não é apenas bonito, ele comunica quem eu sou, como penso arquitetura e para onde quero levar a marca.”</p>
+        <div class="quote-footer">Camille Boavista, Arquiteta e fundadora da Ille Arquitetura</div>
+    </section>
+
+    <section id="cta">
+        <a href="#contato" class="cta-btn">Fale agora com nossa equipe!</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ille Arquitetura - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.animation-block');
+            const options = { threshold: 0.3 };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

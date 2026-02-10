@@ -1,139 +1,118 @@
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,Helvetica,sans-serif;">
-  <tr>
-    <td align="center" style="padding:20px 10px;">
-      <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:4px;overflow:hidden;">
+<style>
+/* Prefixando todas as classes para evitar conflitos com o WordPress */
+.wp-custom-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
 
-        <!-- HEADER -->
-        <tr>
-          <td style="background-color:#1f6432;padding:18px 24px;text-align:left;">
-            <h1 style="margin:0;font-size:20px;line-height:24px;color:#ffffff;">
-              Formulário Contato
-            </h1>
-            <p style="margin:6px 0 0 0;font-size:12px;line-height:16px;color:#e6eb46;">
-              Novo contato recebido pelo site Braslimp
-            </p>
-          </td>
-        </tr>
+.wp-custom-message-box {
+    margin-bottom: 20px;
+}
 
-        <!-- Linha decorativa -->
-        <tr>
-          <td style="height:4px;background-color:#e6eb46;"></td>
-        </tr>
+.wp-custom-check-icon {
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
 
-        <!-- Introdução -->
-        <tr>
-          <td style="padding:20px 24px 10px 24px;">
-            <p style="margin:0 0 10px 0;font-size:14px;line-height:20px;color:#333333;">
-              Olá, equipe Braslimp.
-            </p>
-            <p style="margin:0;font-size:14px;line-height:20px;color:#333333;">
-              Você recebeu um novo envio do <strong>Formulário de Contato</strong> no site.
-            </p>
-          </td>
-        </tr>
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
 
-        <!-- Nome -->
-        <tr>
-          <td style="padding:10px 24px 0 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-              <tr>
-                <td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:4px;">
-                  <span style="display:block;font-size:11px;font-weight:bold;color:#1f6432;text-transform:uppercase;letter-spacing:0.5px;">
-                    Nome
-                  </span>
-                  <span style="display:block;font-size:14px;color:#333333;margin-top:3px;">[nome]</span>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+p {
+    font-size: 16px;
+    color: #555;
+}
+.wp-custom-immediate-contact{
+	background-color: #EEF4FF;
+    padding: 30px 20px;
+    border-radius: 20px;
+    
+}
+.wp-custom-immediate-contact h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
 
-        <!-- Telefone e E-mail -->
-        <tr>
-          <td style="padding:0 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-              <tr>
+.wp-custom-immediate-contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
 
-                <!-- Telefone -->
-                <td width="50%" style="padding-right:4px;">
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:4px;">
-                        <span style="display:block;font-size:11px;font-weight:bold;color:#1f6432;text-transform:uppercase;letter-spacing:0.5px;">
-                          Telefone
-                        </span>
-                        <span style="display:block;font-size:14px;color:#333333;margin-top:3px;">[telefone]</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+.wp-custom-contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
-                <!-- Email -->
-                <td width="50%" style="padding-left:4px;">
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:4px;">
-                        <span style="display:block;font-size:11px;font-weight:bold;color:#1f6432;text-transform:uppercase;letter-spacing:0.5px;">
-                          E-mail
-                        </span>
-                        <span style="display:block;font-size:14px;color:#333333;margin-top:3px;">[email]</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+.wp-custom-whatsapp-button, .wp-custom-call-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
 
-              </tr>
-            </table>
-          </td>
-        </tr>
+.wp-custom-whatsapp-button {
+    background-color: #25D366;
+    transition: all 0.7s;
+}
+.wp-custom-whatsapp-button:hover {
+    background-color: #0A89FD;
+    color: #ffffff;
+}
+.wp-custom-call-button {
+    background-color: #003667;
+    transition: all 0.7s;
+    
+}
+.wp-custom-call-button:hover{
+    background-color: #0A89FD;
+    color: #ffffff;
+}
+.obgespacador{
+    margin-top: 30px;
+}
+</style>
 
-        <!-- Assunto -->
-        <tr>
-          <td style="padding:0 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-              <tr>
-                <td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:4px;">
-                  <span style="display:block;font-size:11px;font-weight:bold;color:#1f6432;text-transform:uppercase;letter-spacing:0.5px;">
-                    Assunto
-                  </span>
-                  <span style="display:block;font-size:14px;color:#333333;margin-top:3px;">[assunto]</span>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- Mensagem -->
-        <tr>
-          <td style="padding:0 24px 20px 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
-              <tr>
-                <td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:4px;">
-                  <span style="display:block;font-size:11px;font-weight:bold;color:#1f6432;text-transform:uppercase;letter-spacing:0.5px;">
-                    Mensagem
-                  </span>
-                  <span style="display:block;font-size:14px;color:#333333;margin-top:3px;white-space:pre-line;">
-                    [mensagem]
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- FOOTER -->
-        <tr>
-          <td style="padding:14px 24px 18px 24px;background-color:#f8f8f8;border-top:1px solid #e0e0e0;text-align:left;">
-            <p style="margin:0 0 6px 0;font-size:12px;line-height:18px;color:#555555;">
-              <strong style="color:#1f6432;">E-mail enviado do seu site, Braslimp!</strong>
-            </p>
-            <p style="margin:0;font-size:11px;line-height:16px;color:#888888;">
-              Esta é uma mensagem automática gerada pelo formulário de contato.
-            </p>
-          </td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
+<div class="wp-custom-container">
+        <div class="wp-custom-message-box">
+            <div class="wp-custom-check-icon">
+                <span>✔</span>
+            </div>
+            <h1>Obrigado pelo seu contato!</h1>
+            <p>Sua mensagem foi enviada com sucesso. Em breve, um de nossos especialistas entrará em contato com você.</p>
+        </div>
+        <div class="wp-custom-immediate-contact">
+            <h3>ATENDIMENTO IMEDIATO</h3>
+            <p>Mas, se você não quiser esperar, pode falar com a gente por ligação ou WhatsApp através do número:</p>
+            <div class="wp-custom-contact-buttons">
+                <a href="https://wa.me/558540084500" target="_blank" class="wp-custom-whatsapp-button">WhatsApp</a>
+                <a href="tel:+558540084510" target="_blank" class="wp-custom-call-button">85 4008.4510</a>
+            </div>
+        </div>
+        <div class="wp-custom-contact-buttons obgespacador">
+            <a href="https://polibrassoftware.com.br/" class="wp-custom-call-button">Página Inicial</a>
+        </div>
+    </div>
