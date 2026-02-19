@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Atlântico - IA</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+
+        /* Container Principal */
+        .hero-banner {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Vídeo rodando ao fundo */
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* Camada Mágica: Fundo branco, linhas e textos vazados */
+        .blend-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            /* Fundo branco com 4 linhas verticais sutis em cinza */
+            background-color: #ffffff;
+            background-image:
+                linear-gradient(90deg, transparent calc(20% - 1px), #e0e0e0 calc(20%), transparent calc(20% + 1px)),
+                linear-gradient(90deg, transparent calc(40% - 1px), #e0e0e0 calc(40%), transparent calc(40% + 1px)),
+                linear-gradient(90deg, transparent calc(60% - 1px), #e0e0e0 calc(60%), transparent calc(60% + 1px)),
+                linear-gradient(90deg, transparent calc(80% - 1px), #e0e0e0 calc(80%), transparent calc(80% + 1px));
+
+            /* O Segredo: No modo 'screen', a cor preta revela a camada de baixo (o vídeo) 
+               e a cor branca esconde. */
+            mix-blend-mode: screen;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos dos textos */
+        .split-text {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            perspective: 1200px;
+            /* Profundidade para a rotação 3D */
+            cursor: default;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 2.5rem);
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .title {
+            font-size: clamp(3.5rem, 10vw, 10rem);
+            letter-spacing: 8px;
+            line-height: 1;
+        }
+
+        /* Estilo individual de cada letra gerada pelo JavaScript */
+        .char {
+            display: inline-block;
+            color: #000;
+            /* Preto para ficar 100% vazado e mostrar o vídeo */
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transform-style: preserve-3d;
+            transform-origin: center;
+
+            /* Efeito 3D da extrusão da letra. 
+               Como os tons são em escalas de cinza escuro, as laterais do 3D também
+               revelarão o vídeo, criando um efeito de luz e sombra dinâmico muito elegante. */
+            text-shadow:
+                1px 1px 0 #111,
+                2px 2px 0 #222,
+                3px 3px 0 #333,
+                4px 4px 0 #444,
+                5px 5px 0 #555,
+                6px 6px 0 #666,
+                7px 7px 0 #777;
+        }
+
+        /* O giro de 180 graus (inversão) quando o mouse passa por cima */
+        .char:hover {
+            transform: rotateY(180deg) scale(1.1);
+        }
+
+        /* Mantém o espaçamento das palavras correto */
+        .char.space {
+            width: 0.4em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero-banner">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="blend-overlay">
+            <h2 class="split-text subtitle">Centro em excelência em IA</h2>
+            <h1 class="split-text title">Atlântico</h1>
+        </div>
+    </section>
+
+    <script>
+        // O JavaScript pega o texto e separa cada letra em um <span> individual
+        // Isso permite que o CSS aplique o efeito de hover/3D letra por letra.
+        document.addEventListener("DOMContentLoaded", () => {
+            const textElements = document.querySelectorAll('.split-text');
+
+            textElements.forEach(el => {
+                const text = el.innerText;
+                el.innerHTML = ''; // Limpa o conteúdo original
+
+                // Divide a string em caracteres e recria com a classe .char
+                text.split('').forEach(char => {
+                    const span = document.createElement('span');
+                    span.className = 'char';
+
+                    if (char === ' ') {
+                        span.classList.add('space');
+                    }
+
+                    span.innerText = char;
+                    el.appendChild(span);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

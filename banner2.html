@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlântico - Excelência em IA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+        :root {
+            --bg-color: #ffffff;
+            --line-color: #f0f0f0;
+            /* Vídeo de fundo - Substitua pelo seu arquivo .mp4 */
+            --video-url: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueXF6NjB4bmpxZzR4eHh4eHh4eHh4eHh4eHh4eHh4eHh4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxx6676c5S8/giphy.gif');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Grid de 4 linhas verticais (Two Sigma Style) */
+        .grid-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .line {
+            width: 1px;
+            height: 100%;
+            background-color: var(--line-color);
+        }
+
+        /* Container do Conteúdo */
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            perspective: 2000px; /* Profundidade do 3D */
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: none;
+        }
+
+        .title-container {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+        }
+
+        /* A mágica das letras */
+        .char {
+            display: inline-block;
+            font-size: clamp(4rem, 15vw, 12rem);
+            font-weight: 900;
+            line-height: 1;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: crosshair;
+            
+            /* Recorte do vídeo */
+            color: transparent;
+            background-image: var(--video-url);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Mantém o vídeo parado enquanto a letra gira */
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* Efeito de face vazada (extrusão sutil) */
+            filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
+        }
+
+        /* Efeito de rotação 180° */
+        .char:hover {
+            transform: rotateY(180deg);
+        }
+
+        /* Garante que o vídeo continue aparecendo no verso da letra */
+        .char::after {
+            content: attr(data-letter);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+            backface-visibility: visible;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: var(--video-url);
+            background-attachment: fixed;
+            background-size: cover;
+            color: transparent;
+            pointer-events: none;
+        }
+
+        .space { width: 0.3em; }
+    </style>
+</head>
+<body>
+
+    <div class="grid-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="content">
+        <p class="subtitle">Centro em excelência em IA</p>
+        <div class="title-container" id="animated-title">Atlântico</div>
+    </div>
+
+    <script>
+        const titleContainer = document.getElementById('animated-title');
+        const text = titleContainer.innerText;
+        titleContainer.innerHTML = '';
+
+        // Divide o texto em letras para aplicar o efeito individual
+        [...text].forEach(letter => {
+            const span = document.createElement('span');
+            span.className = letter === ' ' ? 'char space' : 'char';
+            span.innerText = letter;
+            span.setAttribute('data-letter', letter); // Usado para o efeito de verso
+            titleContainer.appendChild(span);
+        });
+    </script>
+
+</body>
+</html>
