@@ -1,0 +1,137 @@
+<style>
+    /* Container principal com borda arredondada verde */
+    .coopeuro-form-container {
+        width: 100%;
+        border: 2px solid #315833;
+        border-radius: 12px;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Espaçamento entre os campos */
+    .coopeuro-form-container .form-group {
+        margin-bottom: 20px;
+    }
+
+    /* Estilização das Labels (Nome, Email, etc) */
+    .coopeuro-form-container label {
+        display: block;
+        color: #315833;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    /* Estilização dos Inputs e Textarea */
+    .coopeuro-form-container input[type="text"],
+    .coopeuro-form-container input[type="email"],
+    .coopeuro-form-container input[type="tel"],
+    .coopeuro-form-container textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #333333;
+        transition: border-color 0.3s ease;
+    }
+
+    /* Efeito de foco nos campos */
+    .coopeuro-form-container input[type="text"]:focus,
+    .coopeuro-form-container input[type="email"]:focus,
+    .coopeuro-form-container input[type="tel"]:focus,
+    .coopeuro-form-container textarea:focus {
+        border-color: #315833;
+        outline: none;
+        box-shadow: 0 0 5px rgba(49, 88, 51, 0.2);
+    }
+
+    /* Ajuste de altura da caixa de descrição */
+    .coopeuro-form-container textarea {
+        height: 150px;
+        resize: vertical;
+    }
+
+    /* Estilização dos Checkboxes */
+    .coopeuro-form-container .wpcf7-checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .coopeuro-form-container .wpcf7-list-item {
+        margin: 0;
+    }
+
+    .coopeuro-form-container .wpcf7-list-item-label {
+        color: #444444;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+
+    /* Estilização do Botão Enviar */
+    .coopeuro-form-container .wpcf7-submit {
+        width: 100%;
+        padding: 14px;
+        background-color: #f5dcc4; /* Cor pêssego/bege inspirada na imagem */
+        color: #315833; /* Texto com o verde da identidade Coopeuro */
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .coopeuro-form-container .wpcf7-submit:hover {
+        background-color: #315833;
+        color: #ffffff;
+    }
+
+    .coopeuro-form-container p{
+        line-height:15px;
+    }
+</style>
+
+<div class="coopeuro-form-container">
+<div class="form-group">
+        
+        [checkbox* anonimo use_label_element "Desejo que meus dados sejam tratados de forma anônima"]
+    </div>
+    <div class="form-group">
+        <label>Nome</label>
+        [text* nome id:nome class:form-control]
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        [email* email id:email class:form-control]
+    </div>
+
+    <div class="form-group">
+        <label>Seu telefone ou whatsapp</label>
+        [tel* telefone id:telefone class:form-control]
+    </div>
+
+    <div class="form-group">
+        <label>Assunto</label>
+        [checkbox* assunto use_label_element "Reclamações" "Elogios" "Sugestões" "Sugestões Pré-assembleares"]
+    </div>
+
+    <div class="form-group">
+        <label>Descrição</label>
+        [textarea* descricao id:descricao class:form-control]
+    </div>
+<div class="col-12">
+[acceptance acceptance-806] Li e aceito os termos de 
+<a href="https://coopeuro.com.br/politica-de-privacidade/" style="color: #04592f;font-weight: 500" title="Política de privacidade" target="_blank">Política de Privacidade</a> e <a href="https://coopeuro.com.br/termos-de-uso/" style="color: #04592f;font-weight: 500" target="_blank">Termos de Uso</a>
+[/acceptance]
+</div>
+
+    <div class="form-group">
+        [submit class:btn-enviar "Enviar"]
+    </div>
+</div>
