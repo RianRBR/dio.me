@@ -76,10 +76,12 @@
     .coopeuro-form-container .wpcf7-submit {
         width: 100%;
         padding: 14px;
-        background-color: #f5dcc4; /* Cor pêssego/bege inspirada na imagem */
-        color: #315833; /* Texto com o verde da identidade Coopeuro */
+        background-color: #315833;
+        /* Cor pêssego/bege inspirada na imagem */
+        color: #fff;
+        /* Texto com o verde da identidade Coopeuro */
         border: none;
-        border-radius: 6px;
+        border-radius: 26px;
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
@@ -87,19 +89,19 @@
     }
 
     .coopeuro-form-container .wpcf7-submit:hover {
-        background-color: #315833;
+        background-color: #5EDC5F;
         color: #ffffff;
     }
 
-    .coopeuro-form-container p{
-        line-height:15px;
+    .coopeuro-form-container p {
+        line-height: 15px;
     }
 </style>
 
 <div class="coopeuro-form-container">
-<div class="form-group">
-        
-        [checkbox* anonimo use_label_element "Desejo que meus dados sejam tratados de forma anônima"]
+    <div class="form-group">
+
+        [checkbox anonimo use_label_element "Desejo que meus dados sejam tratados de forma anônima"]
     </div>
     <div class="form-group">
         <label>Nome</label>
@@ -125,11 +127,14 @@
         <label>Descrição</label>
         [textarea* descricao id:descricao class:form-control]
     </div>
-<div class="col-12">
-[acceptance acceptance-806] Li e aceito os termos de 
-<a href="https://coopeuro.com.br/politica-de-privacidade/" style="color: #04592f;font-weight: 500" title="Política de privacidade" target="_blank">Política de Privacidade</a> e <a href="https://coopeuro.com.br/termos-de-uso/" style="color: #04592f;font-weight: 500" target="_blank">Termos de Uso</a>
-[/acceptance]
-</div>
+    <div class="col-12">
+        [acceptance acceptance-806] Li e aceito os termos de
+        <a href="https://coopeuro.com.br/politica-de-privacidade/" style="color: #04592f;font-weight: 500"
+            title="Política de privacidade" target="_blank">Política de Privacidade</a> e <a
+            href="https://coopeuro.com.br/termos-de-uso/" style="color: #04592f;font-weight: 500" target="_blank">Termos
+            de Uso</a>
+        [/acceptance]
+    </div>
 
     <div class="form-group">
         [submit class:btn-enviar "Enviar"]
