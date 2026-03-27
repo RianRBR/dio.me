@@ -1,0 +1,207 @@
+<style>
+    /* Configurações visuais do FAQ - Linhas & Cores */
+    .e_faq {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 15px;
+        font-family: inherit;
+    }
+
+    .gac-item {
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 8px;
+    }
+
+    .gac-item_cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: var(--lc-cor-texto, #8A4261);
+        transition: color 0.3s ease;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .gac-item_cabecalho:hover {
+        color: #6a324a;
+        /* Tom levemente mais escuro no hover */
+    }
+
+    .gac-item_cabecalho_titulo {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1.4;
+        padding-right: 20px;
+    }
+
+    /* Fallback seguro para o ícone caso a fonte Material Icons falhe no carregamento */
+    .gac-item_cabecalho_icone {
+        position: relative;
+        min-width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gac-item_cabecalho_icone::before {
+        content: '+';
+        font-size: 24px;
+        font-weight: 300;
+        transition: transform 0.3s ease;
+    }
+
+    .gac-item.is-open .gac-item_cabecalho_icone::before {
+        transform: rotate(45deg);
+        /* Transforma o + em x ao abrir */
+    }
+
+    .gac-item_conteudo {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.4s ease;
+        color: var(--lc-cor-texto, #8A4261);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .gac-item.is-open .gac-item_conteudo {
+        max-height: 1000px;
+        /* Altura máxima arbitrária para permitir a transição */
+        transition: max-height 0.6s ease-in-out, padding 0.4s ease;
+    }
+
+    .gac-item_conteudo div[itemprop="text"] {
+        padding-bottom: 20px;
+    }
+
+    .gac-item_conteudo p {
+        margin: 0 0 10px 0;
+        padding: 10px;
+    }
+
+    .gac-item_conteudo p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+<div class="c e_faq gac gac-ativo" gac-abrir_primeiro="false" itemscope="" itemtype="https://schema.org/FAQPage">
+
+    <div id="1750081167" class="gac-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">Como faço para começar a revender Linhas & Cores?
+            </div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>É simples. Basta preencher o formulário nesta página para que um de nossos consultores de negócios
+                    entre em contato via WhatsApp com todas as informações. Você seleciona as peças para o seu estoque,
+                    atinge o pedido mínimo de atacado e já pode iniciar suas vendas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="1326541_1_1740387513971267231" class="gac-item" itemscope="" itemprop="mainEntity"
+        itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">Qual é a margem de lucro na revenda?</div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>Nosso modelo B2B é altamente rentável. Os lojistas e empreendedores parceiros alcançam até 100% de
+                    margem de lucro, dependendo da estratégia de precificação e da região de atuação. É a oportunidade
+                    ideal para dobrar o capital investido com produtos de alto giro.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="1750081370" class="gac-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">Existe um pedido mínimo para comprar no atacado?
+            </div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>Para ativar seu cadastro e garantir uma diversidade estratégica de estoque, o pedido inicial mínimo é
+                    de R$ 1.000,00. Esse volume foi calculado para que o seu negócio ofereça variedade ao consumidor
+                    final, acelerando o giro das peças e o retorno financeiro.</p>
+                <p>Com o cadastro ativo, você tem liberdade para gerenciar o volume de reposição conforme a demanda da
+                    sua loja, sem comprometer o fluxo de caixa. A manutenção da parceria exige apenas o cumprimento das
+                    metas trimestrais de volume.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="1749817529" class="gac-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">Em quanto tempo recebo as peças após a compra?</div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>Após a confirmação do pagamento, a separação e o despacho do pedido ocorrem em até 48 horas úteis. O
+                    prazo de trânsito logístico varia conforme a região de destino, e nossa equipe comercial fornece
+                    todo o suporte e rastreio via WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="1749817547" class="gac-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">A empresa trabalha com faturamento via boleto?</div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>Sim, operamos com faturamento via boleto bancário. Contudo, a primeira compra no atacado é processada
+                    exclusivamente à vista (Pix ou cartão de crédito). A liberação da modalidade de faturamento por
+                    boleto a prazo é disponibilizada mediante análise de crédito e estabelecimento de histórico com a
+                    marca.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="1749817560" class="gac-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="gac-item_cabecalho gac-item_cabecalho_direita">
+            <div class="gac-item_cabecalho_titulo" itemprop="name">A marca trabalha com mercadoria em consignação?</div>
+            <div class="gac-item_cabecalho_icone material-icons icone_faq_1"></div>
+        </div>
+        <div class="gac-item_conteudo" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                <p>Não operamos com regime de consignação ou permuta. Nosso modelo de negócios B2B é estruturado para
+                    lojistas e revendedores que buscam escalabilidade e margens de lucro reais por meio da compra
+                    definitiva de estoque para pronta-entrega.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.gac-item');
+
+        faqItems.forEach(item => {
+            const cabecalho = item.querySelector('.gac-item_cabecalho');
+
+            cabecalho.addEventListener('click', () => {
+                const isOpen = item.classList.contains('is-open');
+
+                // Recolhe todos os outros itens abertos (Comportamento de Acordeão)
+                faqItems.forEach(el => el.classList.remove('is-open'));
+
+                // Abre o item clicado se ele estava fechado
+                if (!isOpen) {
+                    item.classList.add('is-open');
+                }
+            });
+        });
+    });
+</script>
