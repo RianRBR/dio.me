@@ -1,0 +1,176 @@
+https://clientes.atratis.com.br/dev/braslimp/categoria-servico/gerenciamento-de-residuos/
+https://braslimp.com.br/servicos/gerenciamento-de-residuos/
+
+https://braslimp.com.br/politica-de-privacidade-e-lgpd/
+https://clientes.atratis.com.br/dev/braslimp/politica-de-privacidade/
+
+
+https://clientes.atratis.com.br/dev/braslimp/categoria-servico/limpeza-industrial/
+https://braslimp.com.br/servicos/limpeza-industrial/
+
+https://clientes.atratis.com.br/dev/braslimp/servicos/incineracao-de-residuos/
+https://braslimp.com.br/servicos/incinerador-2/
+
+https://clientes.atratis.com.br/dev/braslimp/solicite-orcamento/
+https://braslimp.com.br/cotacao/
+
+[01] Coletor Compactador
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/coletor-compactador/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/coletor-compactador/
+ 
+[02] Coletor Hospitalar
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/coletor-hospitalar/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/coletor-hospitalar/
+ 
+[03] Caminhão Baú Hospitalar
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/caminhao-bau-hospitalar
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/caminhao-bau-hospitalar/
+ 
+[04] Roll-On/Roll-Off com Caçamba de 20m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-cacamba-20m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-com-cacamba-de-20-m%c2%b3/
+ 
+[05] Roll-On/Roll-Off com Caçamba de 40m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-cacamba-40m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-com-cacamba-de-40-m%c2%b3/
+ 
+[06] Roll-On/Roll-Off Bitrem — Capacidade 40m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-bitrem-capacidade-40m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-bitrem-capacidade-40-m%c2%b3/
+ 
+[07] Roll-On/Roll-Off Bitrem — Capacidade 80m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-bitrem-capacidade-80m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-bitrem-capacidade-80-m%c2%b3/
+ 
+[08] Roll-On/Roll-Off de Sucção a Alto Vácuo
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-succao-alto-vacuo/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-de-succao-a-alto-vacuo/
+ 
+[09] Caminhão Sugador a Alto Vácuo
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/sugador-a-alto-vacuo/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/caminhao-sugador-a-alto-vacuo/
+ 
+[10] Roll-On/Roll-Off Prancha / Porta Container Marítimo
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/roll-on-roll-off-prancha-porta-container-maritimo/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/roll-on-roll-off-prancha-porta-container-maritimo/
+ 
+[11] Poliguindaste Duplo para Transporte de Containers
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/poliguindaste-duplo
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/poliguindaste-duplo-para-transporte-de-containers/
+ 
+[12] Caminhão Munck
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/frota/caminhao-munck/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/caminhao-munck/
+ 
+[13] Listagem Geral — Frota (página de categoria)
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/frota/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/categoria-frota-e-equipementos/frota-para-residuos/
+
+  01] Bombona 200L
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/bombona-200l/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/bombona-200-l/
+ 
+[02] Container 1,2m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-1-2m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-1-2-m%c2%b3/
+ 
+[03] Container 4m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-4m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-4m%c2%b3/
+ 
+[04] Container 4,2m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-4-2m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-4-2m%c2%b3/
+ 
+[05] Container 5m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-5m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-5m%c2%b3/
+ 
+[06] Container 7m³
+  ANTIGO: Sem correspondência no site antigo (ver Seção 2)
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-7m%c2%b3/
+ 
+[07] Container 8,5m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-8-5m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-8-5m%c2%b3/
+ 
+[08] Container Gaiola
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-gaiola/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-gaiola/
+ 
+[09] Prensa Compactadora 5m³  (era "Prensa Estacionária 5m³")
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/prensa-estacionaria-5m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/prensa-compactadora-5-m%c2%b3/
+ 
+[10] Prensa Compactadora 17m³  (era "Prensa Estacionária 17m³")
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/prensa-estacionaria-17m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/prensa-compactadora-17-m%c2%b3/
+ 
+[11] Tanque Estacionário 15m³ e 18m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/tanque-estacionario-15m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/tanque-estacionario-15-m%c2%b3/
+ 
+[12] Container Metálico 20m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-20m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-20-m%c2%b3/
+ 
+[13] Container Metálico 40m³
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/container-40m3/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/container-40-m%c2%b3/
+ 
+[14] Retroescavadeira
+  ANTIGO: Sem correspondência no site antigo (ver Seção 2)
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/retroescavadeira/
+ 
+[15] Varredeira Mecanizada
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/varredeira-mecanizada
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/varredeira-mecanizada/
+ 
+[16] Mini Carregadeira
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/mini-carregadeira/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/mini-carregadeira/
+ 
+[17] Garra Sucateira
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/garra-sucateira/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/garra-sucateira/
+ 
+[18] Mini Carregadeira com Garfo
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/minicarregadeira-com-garfo/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/mini-carregadeira-com-garfo/
+  OBS:    No site antigo a URL está fora da pasta /equipamentos/ (nível acima, em /frota-equipamentos/).
+ 
+[19] Concha Hidráulica
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/concha-hidraulica/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/concha-hidraulica/
+ 
+[20] Bomba de Lóbulos
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/bomba-de-lobulo/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/frota-e-equipamentos/bomba-de-lobulos/
+ 
+[21] Listagem Geral — Equipamentos (página de categoria)
+  ANTIGO: https://braslimp.com.br/frota-equipamentos/equipamentos/
+  NOVO:   https://clientes.atratis.com.br/dev/braslimp/categoria-frota-e-equipementos/equipamentos-para-residuos/
+
+  ANTIGO: https://braslimp.com.br/blog/incineracao-de-residuos/
+NOVO:   https://braslimp.com.br/blog/solucoes/incineracao-solucao-sustentavel-para-o-tratamento-de-residuos/
+ 
+ANTIGO: https://braslimp.com.br/blog/corte-de-pa-eolica/
+NOVO:   https://braslimp.com.br/blog/desafios-e-solucoes-para-gestao-de-residuos-em-parques-eolicos/
+ 
+ANTIGO: https://braslimp.com.br/blog/gerenciamento-de-residuos-em-parque-eolico/
+NOVO:   https://braslimp.com.br/blog/gestao-de-residuos-em-parques-eolicos/
+ 
+ANTIGO: https://braslimp.com.br/blog/mercado/classificacao-dos-residuos/
+NOVO:   https://braslimp.com.br/blog/classificacao-dos-residuos/
+ 
+ANTIGO: https://braslimp.com.br/blog/sustentabilidade/tratamento-de-efluentes/
+NOVO:   https://braslimp.com.br/blog/tratamento-de-efluentes/
+ 
+ANTIGO: https://braslimp.com.br/blog/braslimp-noticias/braslimp-promove-acao-em-prol-do-novembro-azul/
+NOVO:   https://braslimp.com.br/blog/braslimp-promove-acao-em-prol-do-novembro-azul/
+ 
+ANTIGO: https://braslimp.com.br/blog/braslimp-noticias/braslimp-promove-acao-para-outubro-rosa/
+NOVO:   https://braslimp.com.br/blog/braslimp-promove-acao-para-outubro-rosa/
+ 
+ANTIGO: https://braslimp.com.br/blog/braslimp-noticias/dia-mundial-da-limpeza-de-praia-braslimp-realiza-acao-social/
+NOVO:   https://braslimp.com.br/blog/dia-mundial-da-limpeza-de-praia-braslimp-realiza-acao-social/
