@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kronos Fit Metabolic — Termogênico Sem Tremedeira · Site Oficial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0B0B0B;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:#C87F2E}
+  a:hover{color:#E8A33D}
+  :root{
+    --branco:#FFFFFF;--preto:#0B0B0B;--preto-puro:#000000;--grafite:#1A1A1A;
+    --ocre:#C87F2E;--ocre-claro:#E8A33D;--vermelho:#B3200F;--nevoa:#F4F4F4;--linha:#D9D9D9;
+    --grad:linear-gradient(135deg,#E8A33D 0%,#C87F2E 45%,#B3200F 100%);
+    --h1:40px;--h2:32px;--h3:20px;--body:16px;--micro:13px;
+    --secpad:64px;--gut:20px;--maxw:1200px;
+    --hero-cols:1fr;--two:1fr;--grid2:1fr;--grid3:1fr;--grid4:1fr 1fr;
+    --kits-dir:column;--kit2-order:-1;--kit-scale:1;
+    --show1x1:none;--show916:block;--athlete-fit:cover;--sticky:flex;
+  }
+  @media(min-width:768px){:root{--h1:56px;--h2:44px;--grid2:1fr 1fr;--two:1fr 1fr;--grid3:1fr 1fr 1fr;--grid4:1fr 1fr 1fr 1fr;--show1x1:block;--show916:none}}
+  @media(min-width:1025px){:root{--h1:72px;--h2:52px;--h3:24px;--body:18px;--micro:14px;--secpad:96px;--gut:40px;--hero-cols:55fr 45fr;--kits-dir:row;--kit2-order:0;--kit-scale:1.05;--sticky:none}}
+  .cham{clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px)}
+  [data-lucide]{stroke-width:2.4}
+  @keyframes emberPulse{0%,100%{opacity:.55}50%{opacity:.85}}
+</style>
+</helmet>
+<template id="__bundler_thumbnail" data-bg-color="#0B0B0B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B0B0B"/>
+    <circle cx="600" cy="360" r="230" fill="none" stroke="#C87F2E" stroke-width="10"/>
+    <circle cx="600" cy="360" r="200" fill="#141414"/>
+    <text x="600" y="330" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="150" fill="#ffffff">K</text>
+    <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="70" letter-spacing="6" fill="#C87F2E">FIT</text>
+    <rect x="360" y="640" width="480" height="70" rx="10" fill="#C87F2E"/>
+  </svg>
+</template>
+<div ref="{{ rootRef }}" style="font-family:'Inter',system-ui,sans-serif;color:#fff;background:#0B0B0B;overflow-x:hidden">
+
+  <!-- S0 TOP BAR -->
+  <div style="position:sticky;top:0;z-index:60;background:var(--grad);height:40px;display:flex;align-items:center;justify-content:center;padding:0 12px">
+    <p style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:var(--micro);color:#fff;text-align:center;line-height:1">
+      Frete grátis acima de 2 potes · A oferta termina em
+      <span style="font-variant-numeric:tabular-nums;margin-left:6px"><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m <span data-cd="s">00</span>s</span>
+    </p>
+  </div>
+
+  <!-- S0.1 HEADER -->
+  <header style="{{ headerStyle }}">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);height:64px;display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="assets/kronos-logo.jpg" alt="Logo Kronos Fit" style="width:44px;height:44px;border-radius:50%;object-fit:cover;box-shadow:0 0 18px rgba(200,127,46,.45)">
+        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:18px;color:#fff">Kronos Fit</span>
+      </div>
+      <a href="#kits" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border:2px solid var(--ocre);color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px;border-radius:8px;text-decoration:none">Comprar</a>
+    </div>
+  </header>
+
+  <!-- S1 HERO -->
+  <section id="topo" style="position:relative;scroll-margin-top:110px;background:#0B0B0B;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 78% 12%,rgba(232,163,61,.28),transparent 55%),radial-gradient(90% 70% at 20% 90%,rgba(179,32,15,.22),transparent 60%),conic-gradient(from 210deg at 65% 40%,rgba(200,127,46,.10),transparent 25%,rgba(179,32,15,.08) 55%,transparent 80%);"></div>
+    <div style="position:absolute;inset:0;background:radial-gradient(2px 2px at 20% 30%,rgba(232,163,61,.9),transparent),radial-gradient(1.5px 1.5px at 70% 20%,rgba(232,163,61,.7),transparent),radial-gradient(2px 2px at 82% 62%,rgba(255,150,60,.8),transparent),radial-gradient(1.5px 1.5px at 38% 78%,rgba(232,163,61,.6),transparent),radial-gradient(1px 1px at 55% 45%,rgba(255,180,90,.8),transparent);animation:emberPulse 4s ease-in-out infinite"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.72),rgba(11,11,11,.4) 40%,rgba(11,11,11,.85))"></div>
+    <div style="position:relative;max-width:var(--maxw);margin:0 auto;padding:calc(var(--secpad) - 10px) var(--gut) var(--secpad);display:grid;grid-template-columns:var(--hero-cols);gap:40px;align-items:center">
+      <div data-reveal>
+        <p style="margin:0 0 14px;color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:var(--micro)">O Protocolo Kronos Fit</p>
+        <h1 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.94;font-size:var(--h1);color:#fff;text-wrap:balance">Queime gordura <span style="color:var(--ocre)">sem perder músculo</span>. Sem tremedeira. Sem crash.</h1>
+        <p style="margin:22px 0 0;max-width:34ch;font-size:var(--body);line-height:1.6;color:rgba(255,255,255,.8)">Fórmula avançada em 90 cápsulas que apoia o metabolismo, sustenta a disposição e entrega foco constante — sem os efeitos colaterais dos termogênicos comuns.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px 22px;margin:24px 0 28px">
+          <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:14px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="flame" width="20" height="20"></i></span>Queima inteligente</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:14px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="zap" width="20" height="20"></i></span>Energia constante</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:14px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="target" width="20" height="20"></i></span>Foco e disposição</span>
+        </div>
+        <a href="#kits" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;height:56px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.04em;border-radius:8px;text-decoration:none;box-shadow:0 12px 36px rgba(200,127,46,.4);transition:filter .2s" style-hover="filter:brightness(1.08)"><span>Quero meu protocolo 90</span><i data-lucide="arrow-right" width="22" height="22"></i></a>
+        <p style="margin:14px 0 0;font-size:var(--micro);color:rgba(255,255,255,.55)">Envio em 24h · Garantia de 30 dias · Pagamento seguro</p>
+      </div>
+      <div data-reveal style="position:relative;display:flex;justify-content:center;align-items:center;min-height:340px">
+        <div style="position:absolute;width:74%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.5),rgba(200,127,46,.15) 45%,transparent 70%);filter:blur(6px)"></div>
+        <img src="assets/kronos-pote.png" alt="Pote de Kronos Fit Metabolic com 90 cápsulas" style="position:relative;max-width:100%;max-height:520px;filter:drop-shadow(0 30px 50px rgba(0,0,0,.7))">
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 AUTORIDADE -->
+  <section style="background:#fff;border-top:2px solid var(--ocre)">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:26px var(--gut);display:grid;grid-template-columns:var(--grid4);gap:18px">
+      <sc-for list="{{ selos }}" as="selo" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:10px;justify-content:center;text-align:left">
+          <span style="color:var(--ocre);display:inline-flex;flex:none"><i data-lucide="{{ selo.icon }}" width="26" height="26"></i></span>
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:14px;line-height:1.1;color:var(--grafite)">{{ selo.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- S3 DOR -->
+  <section id="identificacao" style="scroll-margin-top:110px;background:#0B0B0B;padding:var(--secpad) 0">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 40px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff;text-wrap:balance">Você <span style="color:var(--ocre)">se identifica</span> com algum desses cenários?</h2>
+      <div style="display:grid;grid-template-columns:var(--grid2);gap:16px">
+        <sc-for list="{{ dores }}" as="dor" hint-placeholder-count="5">
+          <div data-reveal class="cham" style="grid-column:{{ dor.span }};background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.4),0 0 40px rgba(200,127,46,.08);padding:26px 24px">
+            <span style="color:var(--ocre);display:inline-flex;margin-bottom:12px"><i data-lucide="alert-triangle" width="28" height="28"></i></span>
+            <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:var(--h3);color:#fff">{{ dor.titulo }}</h3>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(255,255,255,.72)">{{ dor.texto }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <p data-reveal style="margin:34px 0 0;text-align:center;color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:18px">Existe um motivo técnico para isso. E uma correção. <i data-lucide="arrow-down" width="20" height="20" style="vertical-align:-4px"></i></p>
+    </div>
+  </section>
+
+  <!-- S4 COMO ATUA -->
+  <section id="como-funciona" style="scroll-margin-top:110px;background:#fff;padding:var(--secpad) 0;color:var(--grafite)">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);display:grid;grid-template-columns:var(--two);gap:44px;align-items:center">
+      <div data-reveal>
+        <h2 style="margin:0 0 20px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:var(--grafite)">Como o Kronos Fit Metabolic atua?</h2>
+        <p style="margin:0 0 26px;padding-left:16px;border-left:3px solid var(--ocre);font-size:var(--body);line-height:1.6;color:var(--grafite)">O Kronos Fit Metabolic é um suplemento alimentar em cápsulas desenvolvido para apoiar o metabolismo, a disposição e a definição corporal em rotinas de treino intenso. A fórmula combina ativos de ação sinérgica em três frentes — energia e foco cognitivo, mobilização de gordura como fonte de energia e sustentação da rotina de força — entregando constância onde os termogênicos comuns falham.</p>
+        <div style="display:grid;grid-template-columns:var(--grid2);gap:12px 24px">
+          <sc-for list="{{ beneficios }}" as="b" hint-placeholder-count="10">
+            <div style="display:flex;align-items:flex-start;gap:10px">
+              <span style="color:var(--ocre);display:inline-flex;flex:none;margin-top:1px"><i data-lucide="check" width="20" height="20"></i></span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:15px;line-height:1.15;color:var(--grafite)">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <a href="#kits" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:30px;height:52px;padding:0 24px;background:transparent;border:2px solid var(--ocre);color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;border-radius:8px;text-decoration:none">Ver os kits disponíveis <i data-lucide="arrow-right" width="18" height="18"></i></a>
+      </div>
+      <div data-reveal style="position:relative;display:flex;justify-content:center">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(200,127,46,.22),transparent 68%)"></div>
+        <img src="assets/kronos-pote-aberto.png" alt="Pote aberto de Kronos Fit Metabolic com cápsulas" style="position:relative;max-width:100%;filter:drop-shadow(0 24px 40px rgba(0,0,0,.28))">
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 PILARES -->
+  <section id="mecanismo" style="position:relative;scroll-margin-top:110px;overflow:hidden">
+    <img src="assets/treine-por-dois.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center">
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,11,11,.92) 30%,rgba(11,11,11,.58) 100%)"></div>
+    <div style="position:relative;max-width:var(--maxw);margin:0 auto;padding:var(--secpad) var(--gut)">
+      <h2 data-reveal style="margin:0 0 36px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff;text-wrap:balance">Por que o Metabolic <span style="color:var(--ocre)">não é mais um</span> termogênico</h2>
+      <div style="display:grid;grid-template-columns:var(--grid3);gap:16px">
+        <sc-for list="{{ pilares }}" as="p" hint-placeholder-count="3">
+          <div data-reveal class="cham" style="background:rgba(15,15,15,.82);backdrop-filter:blur(2px);box-shadow:inset 0 0 0 1px rgba(200,127,46,.45),0 0 40px rgba(200,127,46,.18);padding:28px 24px">
+            <div style="font-family:'Anton',sans-serif;font-size:48px;line-height:1;color:var(--ocre);margin-bottom:10px">{{ p.num }}</div>
+            <h3 style="margin:0 0 10px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:var(--h3);color:#fff">{{ p.titulo }}</h3>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(255,255,255,.78)">{{ p.texto }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 COMPARATIVO -->
+  <section id="comparativo" style="scroll-margin-top:110px;background:#fff;padding:var(--secpad) 0;color:var(--grafite)">
+    <div style="max-width:900px;margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 36px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:var(--grafite)">Kronos Fit Metabolic <span style="color:var(--ocre)">×</span> termogênico comum</h2>
+      <div data-reveal style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:0;border:1px solid var(--linha);border-radius:10px;overflow:hidden">
+        <div style="background:var(--nevoa);padding:16px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:13px;color:var(--grafite)">Critério</div>
+        <div style="background:rgba(200,127,46,.1);border-left:2px solid var(--ocre);border-right:2px solid var(--ocre);padding:16px 14px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:14px;color:var(--ocre)">Kronos Fit Metabolic</div>
+        <div style="background:var(--nevoa);padding:16px 14px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:13px;color:#8a8a8a">Termogênico comum</div>
+        <sc-for list="{{ comparativo }}" as="c" hint-placeholder-count="7">
+          <div style="padding:14px;border-top:1px solid var(--linha);font-size:14px;font-weight:600;line-height:1.35;color:var(--grafite)">{{ c.crit }}</div>
+          <div style="padding:14px;border-top:1px solid var(--linha);border-left:2px solid var(--ocre);border-right:2px solid var(--ocre);background:rgba(200,127,46,.05);text-align:center;font-size:13.5px;line-height:1.35;color:var(--grafite)"><span style="color:var(--ocre);display:inline-flex;vertical-align:-4px;margin-right:4px"><i data-lucide="{{ c.kIcon }}" width="17" height="17"></i></span>{{ c.kronos }}</div>
+          <div style="padding:14px;border-top:1px solid var(--linha);text-align:center;font-size:13.5px;line-height:1.35;color:#8a8a8a"><span style="color:#b9b9b9;display:inline-flex;vertical-align:-4px;margin-right:4px"><i data-lucide="{{ c.cIcon }}" width="17" height="17"></i></span>{{ c.comum }}</div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 PROVA SOCIAL -->
+  <section id="depoimentos" style="scroll-margin-top:110px;background:#0B0B0B;padding:var(--secpad) 0">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 34px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff">Quem já está no protocolo</h2>
+      <div data-reveal style="display:grid;grid-template-columns:var(--grid3);gap:16px;margin-bottom:40px">
+        <div class="cham" style="text-align:center;padding:22px;background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.35)"><div style="font-family:'Anton',sans-serif;font-size:40px;color:var(--ocre);line-height:1">{{POTES_VENDIDOS}}</div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;color:rgba(255,255,255,.7);margin-top:6px">Potes vendidos</div></div>
+        <div class="cham" style="text-align:center;padding:22px;background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.35)"><div style="font-family:'Anton',sans-serif;font-size:40px;color:var(--ocre);line-height:1">{{TOTAL_CLIENTES}}</div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;color:rgba(255,255,255,.7);margin-top:6px">Clientes</div></div>
+        <div class="cham" style="text-align:center;padding:22px;background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.35)"><div style="font-family:'Anton',sans-serif;font-size:40px;color:var(--ocre);line-height:1">{{NOTA_MEDIA}} ★</div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;color:rgba(255,255,255,.7);margin-top:6px">Avaliação média</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:var(--grid3);gap:16px">
+        <sc-for list="{{ depoimentos }}" as="d" hint-placeholder-count="6">
+          <div data-reveal class="cham" style="background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.3);padding:22px 20px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+              <div style="width:52px;height:52px;border-radius:50%;background:repeating-linear-gradient(45deg,#222 0 6px,#191919 6px 12px);display:flex;align-items:center;justify-content:center;color:#555;flex:none"><i data-lucide="user" width="24" height="24"></i></div>
+              <div><div style="font-weight:700;font-size:15px;color:#fff">{{ d.nome }}</div><div style="font-size:12px;color:rgba(255,255,255,.5)">{{ d.local }}</div></div>
+            </div>
+            <div style="display:flex;gap:2px;color:var(--ocre);margin-bottom:12px"><i data-lucide="star" width="16" height="16" style="fill:currentColor"></i><i data-lucide="star" width="16" height="16" style="fill:currentColor"></i><i data-lucide="star" width="16" height="16" style="fill:currentColor"></i><i data-lucide="star" width="16" height="16" style="fill:currentColor"></i><i data-lucide="star" width="16" height="16" style="fill:currentColor"></i></div>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:rgba(255,255,255,.6)">{{ d.token }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:var(--grid3);gap:16px;margin-top:16px">
+        <sc-for list="{{ videos }}" as="v" hint-placeholder-count="3">
+          <div data-reveal style="position:relative;aspect-ratio:9/16;max-height:320px;border-radius:10px;background:repeating-linear-gradient(135deg,#161616 0 14px,#121212 14px 28px);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(200,127,46,.25);overflow:hidden">
+            <div style="width:64px;height:64px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(200,127,46,.45)"><i data-lucide="play" width="26" height="26" style="fill:#fff;margin-left:3px"></i></div>
+            <span style="position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:12px;color:rgba(255,255,255,.55)">{{ v.token }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:38px">
+        <a href="#kits" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;height:56px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.04em;border-radius:8px;text-decoration:none;box-shadow:0 12px 36px rgba(200,127,46,.4);transition:filter .2s" style-hover="filter:brightness(1.08)"><span>Quero entrar no protocolo</span><i data-lucide="arrow-right" width="22" height="22"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- S8 PROTOCOLO -->
+  <section id="protocolo" style="scroll-margin-top:110px;background:#fff;padding:var(--secpad) 0;color:var(--grafite)">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);display:grid;grid-template-columns:var(--two);gap:44px;align-items:center">
+      <div data-reveal>
+        <h2 style="margin:0 0 26px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:var(--grafite)">Como usar seu Metabolic</h2>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <sc-for list="{{ protocolo }}" as="pr" hint-placeholder-count="6">
+            <div style="display:flex;align-items:flex-start;gap:14px">
+              <span style="width:40px;height:40px;border-radius:8px;background:rgba(200,127,46,.12);color:var(--ocre);display:inline-flex;align-items:center;justify-content:center;flex:none"><i data-lucide="{{ pr.icon }}" width="22" height="22"></i></span>
+              <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:16px;color:var(--grafite)">{{ pr.label }}</div><div style="font-size:15px;line-height:1.55;color:#444">{{ pr.texto }}</div></div>
+            </div>
+          </sc-for>
+        </div>
+        <div class="cham" style="margin-top:26px;background:var(--grad);padding:16px 22px;display:inline-flex;align-items:center;gap:12px">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:16px;color:#fff">Protocolo</span>
+          <span style="width:1px;height:22px;background:rgba(255,255,255,.5)"></span>
+          <span style="font-family:'Anton',sans-serif;font-size:30px;color:#fff;line-height:1">90</span>
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:15px;color:#fff">Cápsulas</span>
+        </div>
+      </div>
+      <div data-reveal style="display:flex;justify-content:center">
+        <img src="assets/como-usar-1x1.jpg" alt="Infográfico do protocolo Kronos Fit: como usar seu Metabolic" style="display:var(--show1x1);width:100%;max-width:520px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+        <img src="assets/como-usar-9x16.jpg" alt="Infográfico do protocolo Kronos Fit: como usar seu Metabolic" style="display:var(--show916);width:100%;max-width:360px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+      </div>
+    </div>
+  </section>
+
+  <!-- S9 KITS -->
+  <section id="kits" style="position:relative;scroll-margin-top:80px;background:#0B0B0B;padding:var(--secpad) 0;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(70% 55% at 50% 30%,rgba(200,127,46,.22),transparent 70%)"></div>
+    <div style="position:relative;max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 12px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff">Escolha seu protocolo</h2>
+      <p data-reveal style="margin:0 auto 40px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--ocre)">A oferta com frete grátis termina em <span style="font-variant-numeric:tabular-nums;color:#fff"><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m <span data-cd="s">00</span>s</span></p>
+      <div style="display:flex;flex-direction:var(--kits-dir);gap:20px;align-items:stretch;justify-content:center">
+
+        <!-- KIT 1 -->
+        <div data-reveal class="cham" style="flex:1;max-width:380px;background:#141414;box-shadow:inset 0 0 0 1px rgba(217,217,217,.18);padding:30px 24px;display:flex;flex-direction:column">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:20px;color:#fff">Kit Início</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:13px;color:rgba(255,255,255,.55);margin-top:2px">30 dias · 1 pote</div>
+          <div style="display:flex;justify-content:center;padding:18px 0"><img src="assets/kronos-pote.png" alt="1 pote de Kronos Fit Metabolic" style="height:150px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.6))"></div>
+          <div style="font-size:14px;color:rgba(255,255,255,.5);text-decoration:line-through">de {{PRECO_KIT_1_DE}}</div>
+          <div style="font-family:'Anton',sans-serif;font-size:44px;line-height:1;color:#fff;margin:2px 0">{{PRECO_KIT_1}}</div>
+          <div style="font-size:14px;color:rgba(255,255,255,.65)">12x de {{PARCELA_KIT_1}}</div>
+          <div style="margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:14px;color:var(--ocre)">{{POR_POTE_1}} por pote</div>
+          <div style="flex:1;min-height:20px"></div>
+          <a href="{{LINK_CHECKOUT_1}}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;height:52px;border:2px solid var(--ocre);color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;border-radius:8px;text-decoration:none">Comprar</a>
+        </div>
+
+        <!-- KIT 2 -->
+        <div data-reveal style="order:var(--kit2-order);flex:1;max-width:400px;transform:scale(var(--kit-scale));z-index:2">
+          <div class="cham" style="background:rgba(200,127,46,.5);padding:2px;box-shadow:0 0 50px rgba(200,127,46,.4)">
+            <div class="cham" style="position:relative;background:#151210;padding:34px 24px 30px;display:flex;flex-direction:column;height:100%">
+              <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--grad);padding:6px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:#fff;border-radius:0 0 8px 8px">★ Mais vendido</div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:22px;color:#fff;margin-top:6px">Kit Protocolo</div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:13px;color:var(--ocre);margin-top:2px">90 dias · 3 potes</div>
+              <div style="display:flex;justify-content:center;padding:16px 0"><img src="assets/kronos-pote.png" alt="3 potes de Kronos Fit Metabolic" style="height:172px;filter:drop-shadow(0 16px 28px rgba(0,0,0,.7))"></div>
+              <div style="font-size:14px;color:rgba(255,255,255,.5);text-decoration:line-through">de {{PRECO_KIT_2_DE}}</div>
+              <div style="font-family:'Anton',sans-serif;font-size:52px;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin:2px 0">{{PRECO_KIT_2}}</div>
+              <div style="font-size:14px;color:rgba(255,255,255,.7)">12x de {{PARCELA_KIT_2}}</div>
+              <div style="margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:15px;color:var(--ocre)">{{POR_POTE_2}} por pote</div>
+              <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+                <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#fff"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="check" width="18" height="18"></i></span>Frete grátis</div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#fff"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="check" width="18" height="18"></i></span>Guia do Protocolo</div>
+              </div>
+              <div style="margin-top:14px;padding:8px 12px;background:rgba(200,127,46,.14);border-radius:6px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:13px;color:var(--ocre-claro)">Você economiza {{ECONOMIA_2}}</div>
+              <a href="{{LINK_CHECKOUT_2}}" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;height:56px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:18px;border-radius:8px;text-decoration:none;box-shadow:0 10px 30px rgba(200,127,46,.4);transition:filter .2s" style-hover="filter:brightness(1.08)"><span>Quero este kit</span><i data-lucide="arrow-right" width="20" height="20"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- KIT 3 -->
+        <div data-reveal class="cham" style="flex:1;max-width:380px;background:#141414;box-shadow:inset 0 0 0 1px rgba(217,217,217,.18);padding:30px 24px;display:flex;flex-direction:column">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:20px;color:#fff">Kit Transformação</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:13px;color:rgba(255,255,255,.55);margin-top:2px">180 dias · 6 potes</div>
+          <div style="display:flex;justify-content:center;padding:18px 0"><img src="assets/kronos-pote.png" alt="6 potes de Kronos Fit Metabolic" style="height:150px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.6))"></div>
+          <div style="font-size:14px;color:rgba(255,255,255,.5);text-decoration:line-through">de {{PRECO_KIT_3_DE}}</div>
+          <div style="font-family:'Anton',sans-serif;font-size:44px;line-height:1;color:#fff;margin:2px 0">{{PRECO_KIT_3}}</div>
+          <div style="font-size:14px;color:rgba(255,255,255,.65)">12x de {{PARCELA_KIT_3}}</div>
+          <div style="margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:14px;color:var(--ocre)">{{POR_POTE_3}} por pote</div>
+          <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#fff"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="check" width="18" height="18"></i></span>Frete grátis</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#fff"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="check" width="18" height="18"></i></span>Guia do Protocolo</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#fff"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="check" width="18" height="18"></i></span>Plano de treino</div>
+          </div>
+          <div style="margin-top:14px;padding:8px 12px;background:rgba(200,127,46,.1);border-radius:6px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:13px;color:var(--ocre)">Você economiza {{ECONOMIA_3}}</div>
+          <div style="flex:1;min-height:12px"></div>
+          <a href="{{LINK_CHECKOUT_3}}" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;height:52px;border:2px solid var(--ocre);color:var(--ocre);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;border-radius:8px;text-decoration:none">Comprar</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 20px;margin-top:34px">
+        <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.7)"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="lock" width="18" height="18"></i></span>Compra 100% segura · Envio em 24h</span>
+        <div style="display:flex;gap:8px">
+          <span class="cham" style="padding:6px 12px;background:#1a1a1a;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6)">VISA</span>
+          <span class="cham" style="padding:6px 12px;background:#1a1a1a;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6)">MASTER</span>
+          <span class="cham" style="padding:6px 12px;background:#1a1a1a;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6)">PIX</span>
+          <span class="cham" style="padding:6px 12px;background:#1a1a1a;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6)">BOLETO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S10 GARANTIA -->
+  <section id="garantia" style="scroll-margin-top:110px;background:#fff;padding:var(--secpad) 0;color:var(--grafite)">
+    <div style="max-width:960px;margin:0 auto;padding:0 var(--gut);display:grid;grid-template-columns:var(--two);gap:40px;align-items:center">
+      <div data-reveal style="display:flex;justify-content:center">
+        <div style="position:relative;width:200px;height:200px;border-radius:50%;background:var(--grad);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;box-shadow:0 20px 50px rgba(200,127,46,.35)">
+          <div style="position:absolute;inset:10px;border:2px dashed rgba(255,255,255,.6);border-radius:50%"></div>
+          <div style="font-family:'Anton',sans-serif;font-size:54px;line-height:.9">30</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:16px">Dias</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-top:2px">Garantia</div>
+        </div>
+      </div>
+      <div data-reveal>
+        <h2 style="margin:0 0 16px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:var(--grafite)">Garantia de 30 dias. O risco é nosso.</h2>
+        <p style="margin:0;font-size:var(--body);line-height:1.65;color:#444">Se em 30 dias você não perceber diferença em energia, foco e disposição, é só nos avisar. Devolvemos 100% do valor investido. Sem perguntas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S11 SEGURANÇA -->
+  <section id="seguranca" style="scroll-margin-top:110px;background:#0B0B0B;padding:var(--secpad) 0">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 36px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff;text-wrap:balance">Compromisso Pharma Vitta Scientific Labs</h2>
+      <div style="display:grid;grid-template-columns:var(--grid2);gap:16px">
+        <sc-for list="{{ seguranca }}" as="s" hint-placeholder-count="4">
+          <div data-reveal class="cham" style="background:#141414;box-shadow:inset 0 0 0 1px rgba(200,127,46,.4);padding:26px 24px;display:flex;gap:16px;align-items:flex-start">
+            <span style="width:48px;height:48px;border-radius:10px;background:rgba(200,127,46,.12);color:var(--ocre);display:inline-flex;align-items:center;justify-content:center;flex:none"><i data-lucide="{{ s.icon }}" width="26" height="26"></i></span>
+            <div><h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:var(--h3);color:#fff">{{ s.titulo }}</h3><p style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.7)">{{ s.texto }}</p></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- S12 FAQ -->
+  <section id="faq" style="scroll-margin-top:110px;background:#fff;padding:var(--secpad) 0;color:var(--grafite)">
+    <div style="max-width:800px;margin:0 auto;padding:0 var(--gut)">
+      <h2 data-reveal style="margin:0 0 36px;text-align:center;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:var(--grafite)">Perguntas frequentes</h2>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="8">
+          <div data-reveal style="border:1px solid var(--linha);border-radius:8px;overflow:hidden;background:#fff">
+            <button onClick="{{ f.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;background:none;border:0;cursor:pointer;text-align:left;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:16px;color:var(--grafite)">
+              <span>{{ f.q }}</span>
+              <span style="color:var(--ocre);display:inline-flex;flex:none"><i data-lucide="{{ f.sign }}" width="22" height="22"></i></span>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ true }}">
+              <div style="padding:0 20px 20px;font-size:15px;line-height:1.65;color:#444">{{ f.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- S13 FECHAMENTO -->
+  <section style="position:relative;background:#0B0B0B;padding:var(--secpad) 0;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 30%,rgba(200,127,46,.22),transparent 65%),radial-gradient(2px 2px at 22% 40%,rgba(232,163,61,.8),transparent),radial-gradient(1.5px 1.5px at 74% 30%,rgba(255,150,60,.7),transparent),radial-gradient(2px 2px at 60% 70%,rgba(232,163,61,.6),transparent);animation:emberPulse 4s ease-in-out infinite"></div>
+    <div style="position:relative;max-width:800px;margin:0 auto;padding:0 var(--gut);text-align:center">
+      <h2 data-reveal style="margin:0 0 24px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:1;font-size:var(--h2);color:#fff;text-wrap:balance">Seu metabolismo tem um relógio. <span style="color:var(--ocre)">Comece hoje.</span></h2>
+      <div data-reveal style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;margin-bottom:26px">
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="zap" width="20" height="20"></i></span>Energia limpa</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="target" width="20" height="20"></i></span>Foco constante</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px"><span style="color:var(--ocre);display:inline-flex"><i data-lucide="dumbbell" width="20" height="20"></i></span>Definição com músculo</span>
+      </div>
+      <p data-reveal style="margin:0 0 24px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--ocre)">A oferta termina em <span style="font-variant-numeric:tabular-nums;color:#fff"><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m <span data-cd="s">00</span>s</span></p>
+      <div data-reveal style="display:flex;justify-content:center">
+        <a href="#kits" style="display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:480px;height:64px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.04em;border-radius:8px;text-decoration:none;box-shadow:0 14px 40px rgba(200,127,46,.45);transition:filter .2s" style-hover="filter:brightness(1.08)"><span>Quero meu protocolo 90</span><i data-lucide="arrow-right" width="24" height="24"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- S14 RODAPÉ -->
+  <footer style="background:#000;padding:var(--secpad) 0 120px;color:rgba(255,255,255,.6)">
+    <div style="max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)">
+      <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)">
+        <div style="max-width:320px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <img src="assets/kronos-logo.jpg" alt="Logo Kronos Fit" style="width:56px;height:56px;border-radius:50%;object-fit:cover">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:20px;color:#fff">Kronos Fit</span>
+          </div>
+          <p style="margin:0;font-size:13px;line-height:1.6">Pharma Vitta Scientific Labs<br>CNPJ {{CNPJ}}<br>WhatsApp {{WHATSAPP}} · {{EMAIL}}</p>
+        </div>
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:#fff;margin-bottom:12px">Institucional</div>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:13px">
+            <a href="#" style="color:rgba(255,255,255,.6);text-decoration:none">Política de Privacidade</a>
+            <a href="#" style="color:rgba(255,255,255,.6);text-decoration:none">Termos e Condições</a>
+            <a href="#" style="color:rgba(255,255,255,.6);text-decoration:none">Política de Reembolso</a>
+            <a href="#" style="color:rgba(255,255,255,.6);text-decoration:none">Política de Frete</a>
+            <a href="#" style="color:rgba(255,255,255,.6);text-decoration:none">Trocas e Devoluções</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:#fff;margin-bottom:12px">Pagamento seguro</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;max-width:220px">
+            <span style="padding:6px 12px;background:#141414;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.55);border-radius:4px">VISA</span>
+            <span style="padding:6px 12px;background:#141414;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.55);border-radius:4px">MASTER</span>
+            <span style="padding:6px 12px;background:#141414;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.55);border-radius:4px">PIX</span>
+            <span style="padding:6px 12px;background:#141414;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.55);border-radius:4px">BOLETO</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#141414;font-size:12px;color:rgba(255,255,255,.55);border-radius:4px"><i data-lucide="shield-check" width="16" height="16"></i>SSL</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin:26px 0 0;font-size:12px;line-height:1.6;color:rgba(255,255,255,.4)">Este produto não é um medicamento. Não exceder a recomendação diária de consumo. Mantenha fora do alcance de crianças. Suplemento alimentar não substitui uma alimentação equilibrada e seu consumo deve ser orientado por nutricionista ou médico. Resultados podem variar de pessoa para pessoa.</p>
+      <p style="margin:14px 0 0;font-size:12px;line-height:1.6;color:rgba(255,255,255,.4)">A venda do Kronos Fit Metabolic é feita exclusivamente por este site oficial. Não nos responsabilizamos por compras realizadas em outros canais.</p>
+    </div>
+  </footer>
+
+  <!-- S15 STICKY CTA + WHATSAPP -->
+  <a href="#kits" style="{{ stickyStyle }}">
+    <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;color:#fff">Quero meu kit — 12x de {{PARCELA_KIT_2}}</span>
+    <i data-lucide="arrow-right" width="20" height="20"></i>
+  </a>
+  <a href="{{WHATSAPP}}" aria-label="Fale no WhatsApp" style="position:fixed;right:16px;bottom:84px;z-index:55;width:54px;height:54px;border-radius:50%;background:var(--ocre);display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 24px rgba(200,127,46,.5);text-decoration:none">
+    <i data-lucide="message-circle" width="28" height="28"></i>
+  </a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { scrolled: false, showSticky: false, faqOpen: 0 };
+
+  selosData = [
+    { icon: 'badge-check', label: 'Regularizado ANVISA' },
+    { icon: 'flask-conical', label: 'Pharma Vitta Scientific Labs' },
+    { icon: 'file-check', label: 'Matéria-prima importada com laudo' },
+    { icon: 'shield-check', label: 'Garantia de 30 dias' },
+  ];
+
+  doresData = [
+    { titulo: 'O "efeito murcho" ao perder peso', texto: 'O peso cai na balança, mas o espelho mostra flacidez e a perda da densidade muscular que custou anos para construir.', span: 'auto' },
+    { titulo: 'Tremedeira com termogênico barato', texto: 'Taquicardia, suor frio, oscilação de humor e aquele desânimo absurdo — o famoso crash — poucas horas depois.', span: 'auto' },
+    { titulo: 'A gordura teimosa que não sai', texto: 'Treino pesado, dieta em dia, e a camada abdominal e nos flancos continua escondendo a definição do seu shape.', span: 'auto' },
+    { titulo: 'A sabotagem do doce ao anoitecer', texto: 'Foco o dia inteiro e derrota ao anoitecer: uma vontade incontrolável de açúcar destrói o déficit da semana.', span: 'auto' },
+    { titulo: 'Sem energia para treinar depois do trabalho', texto: 'Corpo fadigado, mente desligada, pesos arrastados — sem a intensidade necessária para evoluir.', span: '1 / -1' },
+  ];
+
+  beneficiosData = [
+    'Apoio ao metabolismo energético',
+    'Energia extrema sem tremores',
+    'Foco e concentração cognitiva',
+    'Disposição para treinos intensos',
+    'Energia constante, sem crash',
+    'Auxílio na sensação de saciedade',
+    'Suporte ao metabolismo de gorduras',
+    'Complemento de treinos de força',
+    'Suporte à rotina de definição',
+    'Protocolo de 90 dias',
+  ];
+
+  pilaresData = [
+    { num: '01', titulo: 'Energia limpa', texto: 'A L-Teanina neutraliza os efeitos colaterais da cafeína. Foco sustentado, sem ansiedade, sem tremor, sem crash.' },
+    { num: '02', titulo: 'Queima com transporte ativo', texto: 'Não basta acelerar. A gordura mobilizada precisa ser transportada e usada como energia — é essa rota que o protocolo trabalha.' },
+    { num: '03', titulo: 'Sem o efeito murcho', texto: 'Definição com densidade. O objetivo é secar sustentando a massa que você construiu no treino.' },
+  ];
+
+  comparativoData = [
+    { crit: 'Base da fórmula', kronos: 'Sinergia de ativos + L-Teanina', comum: 'Dose massiva de cafeína', kIcon: 'check', cIcon: 'minus' },
+    { crit: 'Tremedeira / taquicardia', kronos: 'Não', comum: 'Frequente', kIcon: 'x', cIcon: 'check' },
+    { crit: 'Efeito "crash"', kronos: 'Não', comum: 'Comum', kIcon: 'x', cIcon: 'check' },
+    { crit: 'Foco cognitivo', kronos: 'Sustentado', comum: 'Instável', kIcon: 'check', cIcon: 'x' },
+    { crit: 'Massa magra', kronos: 'Foco em sustentação', comum: 'Não é preocupação', kIcon: 'check', cIcon: 'x' },
+    { crit: 'Protocolo definido', kronos: '90 cápsulas', comum: 'Genérico', kIcon: 'check', cIcon: 'x' },
+    { crit: 'Laboratório', kronos: 'Pharma Vitta Scientific Labs', comum: 'Variável', kIcon: 'check', cIcon: 'x' },
+  ];
+
+  depoimentosData = [1, 2, 3, 4, 5, 6].map(n => ({ n, nome: '{{DEPOIMENTO_' + n + '_NOME}}', local: '{{DEPOIMENTO_' + n + '_LOCAL}}', token: '{{DEPOIMENTO_' + n + '}}' }));
+  videosData = [1, 2, 3].map(n => ({ token: '{{VIDEO_' + n + '}}' }));
+
+  protocoloData = [
+    { icon: 'dumbbell', label: 'Treino', texto: '3 cápsulas 30 min antes.' },
+    { icon: 'coffee', label: 'Off', texto: '2 no café da manhã + 1 após o almoço.' },
+    { icon: 'clock', label: 'Limite', texto: 'Consumir até as 16h (foco no sono).' },
+    { icon: 'droplet', label: 'Água', texto: '3L/dia para o transporte da queima.' },
+    { icon: 'beef', label: 'Proteína', texto: 'Essencial para sustentar o músculo.' },
+    { icon: 'flame', label: 'Constância', texto: 'Efeito cumulativo. Não pule nenhum dia.' },
+  ];
+
+  segurancaData = [
+    { icon: 'badge-check', titulo: 'Regularização ANVISA', texto: 'Produzido em total conformidade com as normas sanitárias vigentes e devidamente regularizado perante a ANVISA. Registro: {{NUM_ANVISA}}' },
+    { icon: 'flask-conical', titulo: 'Padrão farmacêutico', texto: 'Produzido sob as normas mais rígidas de controle de qualidade nos laboratórios da Pharma Vitta Scientific Labs.' },
+    { icon: 'file-check', titulo: 'Fórmula registrada', texto: 'Produto devidamente enquadrado na legislação vigente e em conformidade com as normas de segurança sanitária.' },
+    { icon: 'shield-check', titulo: 'Garantia de pureza', texto: 'Matérias-primas importadas com laudo de pureza e concentração ativa real por cápsula.' },
+  ];
+
+  faqData = [
+    { q: 'O Kronos Fit Metabolic causa tremedeira ou taquicardia?', a: 'Não. Diferente de termogênicos comuns, que usam apenas doses massivas de cafeína barata, a fórmula do Metabolic conta com a L-Teanina, um aminoácido que neutraliza os efeitos colaterais da cafeína — proporcionando energia limpa e foco, sem ansiedade ou tremores.' },
+    { q: 'Mulheres podem consumir?', a: 'Sim. A fórmula é segura e eficaz para homens e mulheres que buscam definição corporal, controle do apetite e mais disposição no treino.' },
+    { q: 'Qual é o prazo para ver os primeiros resultados?', a: 'Os efeitos de energia, foco e controle do apetite são sentidos logo nas primeiras doses. Os resultados estéticos de definição tornam-se visíveis a partir de 2 a 4 semanas de uso contínuo, associados a uma rotina de treinos. Resultados variam de pessoa para pessoa.' },
+    { q: 'Possui alguma contraindicação?', a: 'Sim. Por conter cafeína, não é recomendado para gestantes, lactantes, menores de 19 anos, pessoas hipertensas ou com sensibilidade extrema a estimulantes. Não consumir no período noturno.' },
+    { q: 'Como devo tomar?', a: 'Em dias de treino, 3 cápsulas 30 minutos antes. Em dias off, 2 no café da manhã e 1 após o almoço. Sempre até as 16h.' },
+    { q: 'Posso tomar junto com whey, creatina ou pré-treino?', a: 'Sim, com whey e creatina. Com pré-treinos que já contenham cafeína, atenção à dose total de estimulantes no dia.' },
+    { q: 'Qual o prazo de entrega?', a: 'Envio em até 24h úteis após a confirmação do pagamento. O prazo de entrega varia conforme a região.' },
+    { q: 'Onde comprar o original?', a: 'Exclusivamente neste site oficial. Não comercializamos em marketplaces e não nos responsabilizamos por compras feitas em outros canais.' },
+  ];
+
+  componentDidMount() {
+    // Demo countdown — a data real da campanha entra em {{CONTADOR_FIM_OFERTA}}
+    this.deadline = Date.now() + ((47 * 3600) + (23 * 60) + 11) * 1000;
+    this.tick = () => {
+      let s = Math.max(0, Math.floor((this.deadline - Date.now()) / 1000));
+      const d = Math.floor(s / 86400); s -= d * 86400;
+      const h = Math.floor(s / 3600); s -= h * 3600;
+      const m = Math.floor(s / 60); s -= m * 60;
+      const pad = v => String(v).padStart(2, '0');
+      const set = (k, v) => { if (this.root) this.root.querySelectorAll('[data-cd="' + k + '"]').forEach(e => { e.textContent = pad(v); }); };
+      set('d', d); set('h', h); set('m', m); set('s', s);
+    };
+    this.tick();
+    this.timer = setInterval(this.tick, 1000);
+
+    this.onScroll = () => {
+      const el = document.scrollingElement || document.documentElement;
+      const y = el.scrollTop;
+      const max = el.scrollHeight - el.clientHeight;
+      const nextScrolled = y > 30;
+      const nextSticky = max > 0 && (y / max) > 0.3;
+      if (nextScrolled !== this.state.scrolled || nextSticky !== this.state.showSticky) {
+        this.setState({ scrolled: nextScrolled, showSticky: nextSticky });
+      }
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this.io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    requestAnimationFrame(() => {
+      if (!this.root) return;
+      this.root.querySelectorAll('[data-reveal]').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(16px)';
+        el.style.transition = 'opacity .6s ease, transform .6s ease';
+        this.io.observe(el);
+      });
+    });
+
+    this.ensureIcons();
+  }
+
+  componentDidUpdate() { this.ensureIcons(); }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.io) this.io.disconnect();
+  }
+
+  ensureIcons() {
+    if (window.lucide && window.lucide.createIcons) { window.lucide.createIcons(); }
+    else { clearTimeout(this._it); this._it = setTimeout(() => this.ensureIcons(), 200); }
+  }
+
+  setFaq(i) { this.setState(s => ({ faqOpen: s.faqOpen === i ? -1 : i })); }
+
+  renderVals() {
+    const scrolled = this.state.scrolled;
+    const headerStyle = 'position:sticky;top:40px;z-index:55;transition:background .3s ease, box-shadow .3s ease;background:' +
+      (scrolled ? '#0B0B0B' : 'transparent') + ';box-shadow:' + (scrolled ? '0 1px 0 rgba(200,127,46,.3)' : 'none');
+
+    const show = this.state.showSticky;
+    const stickyStyle = 'position:fixed;left:0;right:0;bottom:0;z-index:58;display:var(--sticky,flex);align-items:center;justify-content:center;gap:10px;height:64px;background:var(--grad);color:#fff;text-decoration:none;box-shadow:0 -6px 24px rgba(0,0,0,.4);transition:transform .35s ease;transform:translateY(' + (show ? '0' : '110%') + ')';
+
+    const faqs = this.faqData.map((f, i) => ({
+      q: f.q, a: f.a, open: this.state.faqOpen === i,
+      sign: this.state.faqOpen === i ? 'minus' : 'plus',
+      toggle: () => this.setFaq(i),
+    }));
+
+    const tokenNames = ['PRECO_KIT_1_DE','PRECO_KIT_1','PARCELA_KIT_1','POR_POTE_1','PRECO_KIT_2_DE','PRECO_KIT_2','PARCELA_KIT_2','POR_POTE_2','ECONOMIA_2','PRECO_KIT_3_DE','PRECO_KIT_3','PARCELA_KIT_3','POR_POTE_3','ECONOMIA_3','LINK_CHECKOUT_1','LINK_CHECKOUT_2','LINK_CHECKOUT_3','POTES_VENDIDOS','TOTAL_CLIENTES','NOTA_MEDIA','NUM_ANVISA','CNPJ','WHATSAPP','EMAIL'];
+    const tokens = {};
+    tokenNames.forEach(n => { tokens[n] = '{{' + n + '}}'; });
+
+    return {
+      ...tokens,
+      rootRef: (el) => { this.root = el; },
+      headerStyle, stickyStyle,
+      selos: this.selosData,
+      dores: this.doresData,
+      beneficios: this.beneficiosData,
+      pilares: this.pilaresData,
+      comparativo: this.comparativoData,
+      depoimentos: this.depoimentosData,
+      videos: this.videosData,
+      protocolo: this.protocoloData,
+      seguranca: this.segurancaData,
+      faqs,
+    };
+  }
+}
+</script>
+</body>
+</html>
