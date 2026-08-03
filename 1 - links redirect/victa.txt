@@ -1,89 +1,89 @@
 https://www.victa.eng.br/nossos-imoveis/
-https://clientes.atratis.com.br/dev/victa/imoveis/
+https://www.victa.eng.br/imoveis/
 
 https://www.victa.eng.br/nossosimoveis/hype-condominio-clube/
-https://clientes.atratis.com.br/dev/victa/imoveis/hype-condominio-clube/
+https://www.victa.eng.br/imoveis/hype-condominio-clube/
 
 https://www.victa.eng.br/nossosimoveis/viver-essencial-condominio-clube/
-https://clientes.atratis.com.br/dev/victa/imoveis/viver-essencial/
+https://www.victa.eng.br/imoveis/viver-essencial/
 
 https://www.victa.eng.br/nossosimoveis/vista-coqueiral/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-coqueiral/
+https://www.victa.eng.br/imoveis/vitoria-coqueiral/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-iris/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-iris/
+https://www.victa.eng.br/imoveis/vitoria-iris/
 
 https://www.victa.eng.br/nossosimoveis/vista-costeira/
-https://clientes.atratis.com.br/dev/victa/imoveis/vista-costeira/
+https://www.victa.eng.br/imoveis/vista-costeira/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-maracanau/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-maracanau/
+https://www.victa.eng.br/imoveis/vitoria-maracanau/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-eusebio/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-eusebio/
+https://www.victa.eng.br/imoveis/vitoria-eusebio/
 
 https://www.victa.eng.br/nossosimoveis/atlantico/
-https://clientes.atratis.com.br/dev/victa/imoveis/atlantico-condominio-clube/
+https://www.victa.eng.br/imoveis/atlantico-condominio-clube/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-acacia/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-acacia/
+https://www.victa.eng.br/imoveis/vitoria-acacia/
 
 https://www.victa.eng.br/nossosimoveis/joquei/
-https://clientes.atratis.com.br/dev/victa/imoveis/joquei-condominio-clube/
+https://www.victa.eng.br/imoveis/joquei-condominio-clube/
 
 https://www.victa.eng.br/nossosimoveis/vista-parque/
-https://clientes.atratis.com.br/dev/victa/imoveis/vista-parque/
+https://www.victa.eng.br/imoveis/vista-parque/
 
 https://www.victa.eng.br/nossosimoveis/vista-mar/
-https://clientes.atratis.com.br/dev/victa/imoveis/vista-mar/
+https://www.victa.eng.br/imoveis/vista-mar/
 
 https://www.victa.eng.br/nossosimoveis/conquista-maraponga/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-maraponga/
+https://www.victa.eng.br/imoveis/conquista-maraponga/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-senna/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-senna/
+https://www.victa.eng.br/imoveis/vitoria-senna/
 
 https://www.victa.eng.br/nossosimoveis/vitoria-mondubim/
-https://clientes.atratis.com.br/dev/victa/imoveis/vitoria-mondubim/
+https://www.victa.eng.br/imoveis/vitoria-mondubim/
 
 https://www.victa.eng.br/nossosimoveis/belvedere/
-https://clientes.atratis.com.br/dev/victa/imoveis/belvedere/
+https://www.victa.eng.br/imoveis/belvedere/
 
 https://www.victa.eng.br/nossosimoveis/reserva-flora/
-https://clientes.atratis.com.br/dev/victa/imoveis/reserva-flora/
+https://www.victa.eng.br/imoveis/reserva-flora/
 
 https://www.victa.eng.br/nossosimoveis/mirante-condominio-clube/
-https://clientes.atratis.com.br/dev/victa/imoveis/mirante-condominio-clube/
+https://www.victa.eng.br/imoveis/mirante-condominio-clube/
 
 https://www.victa.eng.br/nossosimoveis/alta-vista-passare/
-https://clientes.atratis.com.br/dev/victa/imoveis/alta-vista-passare/
+https://www.victa.eng.br/imoveis/alta-vista-passare/
 
 https://www.victa.eng.br/nossosimoveis/viva-vida/
-https://clientes.atratis.com.br/dev/victa/imoveis/viva-vida-caucaia/
+https://www.victa.eng.br/imoveis/viva-vida-caucaia/
 
 https://www.victa.eng.br/nossosimoveis/vida-nova/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-vida-nova/
+https://www.victa.eng.br/imoveis/conquista-vida-nova/
 
 https://www.victa.eng.br/nossosimoveis/conquista-eusebio/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-eusebio/
+https://www.victa.eng.br/imoveis/conquista-eusebio/
 
 https://www.victa.eng.br/nossosimoveis/conquista-jurema/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-jurema/
+https://www.victa.eng.br/imoveis/conquista-jurema/
 
 https://www.victa.eng.br/nossosimoveis/conquista-parque/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-parque/
+https://www.victa.eng.br/imoveis/conquista-parque/
 
 https://www.victa.eng.br/nossosimoveis/conquista-bosque/
-https://clientes.atratis.com.br/dev/victa/imoveis/conquista-bosque/
+https://www.victa.eng.br/imoveis/conquista-bosque/
 
 https://www.victa.eng.br/regioes/
-https://clientes.atratis.com.br/dev/victa/imoveis/
+https://www.victa.eng.br/imoveis/
 
 https://www.victa.eng.br/sobre/
-https://clientes.atratis.com.br/dev/victa/quem-somos/
+https://www.victa.eng.br/quem-somos/
 
 https://victa.eng.br/fornecedores/
-https://clientes.atratis.com.br/dev/victa/seja-um-fornecedor/
+https://www.victa.eng.br/seja-um-fornecedor/
 
 
 
