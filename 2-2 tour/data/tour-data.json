@@ -1,0 +1,255 @@
+{
+  "name": "Laboratório Alia",
+  "description": "Ambiente cadastrado pelo usuário.",
+  "startSceneId": "ambiente-1790172348409",
+  "scenes": [
+    {
+      "id": "ambiente-1790172348409",
+      "name": "Laboratório Alia",
+      "startImageId": "img-1790194272346",
+      "images": [
+        {
+          "id": "img-1790194272346",
+          "name": "Porta",
+          "src": "images/01-porta.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194050452",
+              "position": [
+                -2.30433159114574,
+                0.8721615596635788,
+                -0.9603432317751767
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790193987069",
+          "name": "Fundo",
+          "src": "images/02-fundo.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194066457",
+              "position": [
+                -1.9083280192312237,
+                0.03934507925475117,
+                -1.6225589787032928
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790193995976",
+              "position": [
+                0.047188409071009636,
+                -0.15800330171304688,
+                2.287293301090914
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790193995976",
+          "name": "Impressoraas e Drone",
+          "src": "images/03-impressoraas-e-drone.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790193987069",
+              "position": [
+                -0.5635963049514455,
+                0.38485563576083215,
+                2.502799608259292
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790194008853",
+              "position": [
+                -0.40859126758649267,
+                0.6709944623819621,
+                -2.512825976291849
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790194017762",
+              "position": [
+                2.3759563263315777,
+                0.040565315806112556,
+                0.5327562773896367
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194008853",
+          "name": "HW",
+          "src": "images/04-hw.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790193995976",
+              "position": [
+                0.3297550813064491,
+                0.7129950595519978,
+                -2.408134095513249
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194017762",
+          "name": "Sala de servidores",
+          "src": "images/05-sala-de-servidores.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790193995976",
+              "position": [
+                -1.2511161665205905,
+                0.22730309931465786,
+                -1.865546047869009
+              ],
+              "scale": 0.7
+            },
+            {
+              "targetImageId": "img-1790194095302",
+              "position": [
+                1.6092103758710017,
+                -0.30669699525662164,
+                1.4144574169866233
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194038163",
+          "name": "Entrada",
+          "src": "images/06-entrada.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194050452",
+              "position": [
+                1.9088022619432683,
+                -0.011822893956356051,
+                -2.259241052503788
+              ],
+              "scale": 1
+            },
+            {
+              "targetImageId": "img-1790194066457",
+              "position": [
+                -2.554294171979047,
+                0.16982412652096412,
+                1.2485329406596934
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194050452",
+          "name": "Hall",
+          "src": "images/07-hall.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194038163",
+              "position": [
+                0.20679767043589756,
+                0.4686643641671542,
+                -2.447738323962955
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790194272346",
+              "position": [
+                -2.4027539922032988,
+                0.7206151579545933,
+                0.1181886311448197
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790255463077",
+              "position": [
+                2.5005399238533434,
+                0.8236209297610873,
+                0.16327929602518984
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194066457",
+          "name": "Braços",
+          "src": "images/08-bracos.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194038163",
+              "position": [
+                -0.87333115001383,
+                0.3127284639887893,
+                -2.4697414733106893
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790193987069",
+              "position": [
+                -0.8146132094853112,
+                0.02324269776803023,
+                2.2384845272617366
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790194095302",
+          "name": "Motores",
+          "src": "images/09-motores.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194017762",
+              "position": [
+                2.2379127466347386,
+                -0.3028625027177678,
+                0.6789418857313478
+              ],
+              "scale": 0.6
+            },
+            {
+              "targetImageId": "img-1790194038163",
+              "position": [
+                -0.24704277494689408,
+                0.15868053268529603,
+                -2.2545086627658355
+              ],
+              "scale": 0.6
+            }
+          ]
+        },
+        {
+          "id": "img-1790255463077",
+          "name": "Polaris",
+          "src": "images/10-polaris.jpg",
+          "anchors": [
+            {
+              "targetImageId": "img-1790194050452",
+              "position": [
+                -2.551179811049736,
+                0.8078077766480884,
+                -0.23206799209066303
+              ],
+              "scale": 0.6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

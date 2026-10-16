@@ -1,0 +1,1 @@
+Abra o index.html em um servidor web com acesso à internet para carregar o A-Frame.
