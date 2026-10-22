@@ -1,0 +1,3 @@
+# HOMOLOGAÇÃO — bloqueia tudo. Substitua por robots.producao.txt no go-live.
+User-agent: *
+Disallow: /

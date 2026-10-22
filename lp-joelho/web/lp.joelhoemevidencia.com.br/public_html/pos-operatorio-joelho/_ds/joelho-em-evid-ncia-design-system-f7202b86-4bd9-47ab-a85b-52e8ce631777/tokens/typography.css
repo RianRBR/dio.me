@@ -1,0 +1,55 @@
+:root {
+  /* Weights — the brand uses 3: 500 body, 600 UI/labels, 800 display */
+  --fw-light: 300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold: 700; /* @kind font */
+  --fw-extrabold: 800; /* @kind font */
+
+  /* Sizes */
+  --fs-display-1: 68px;
+  --fs-display-2: 54px;
+  --fs-h1: 42px;
+  --fs-h2: 32px;
+  --fs-h3: 25px;
+  --fs-h4: 20px;
+  --fs-lead: 20px;
+  --fs-body: 17px;
+  --fs-body-sm: 15px;
+  --fs-caption: 13px;
+  --fs-micro: 11px;
+
+  /* Line heights */
+  --lh-tight: 1.04; /* @kind font */
+  --lh-display: 1.08; /* @kind font */
+  --lh-heading: 1.18; /* @kind font */
+  --lh-snug: 1.35; /* @kind font */
+  --lh-body: 1.6; /* @kind font */
+  --lh-loose: 1.75; /* @kind font */
+
+  /* Tracking — display is tightened, eyebrows/labels are opened up */
+  --ls-display: -0.03em; /* @kind font */
+  --ls-heading: -0.02em; /* @kind font */
+  --ls-body: 0em; /* @kind font */
+  --ls-label: 0.02em; /* @kind font */
+  --ls-eyebrow: 0.14em; /* @kind font */
+
+  /* Composed roles */
+  --type-display-1: var(--fw-extrabold) var(--fs-display-1) / var(--lh-tight) var(--font-display); /* @kind font */
+  --type-display-2: var(--fw-extrabold) var(--fs-display-2) / var(--lh-display) var(--font-display); /* @kind font */
+  --type-h1: var(--fw-extrabold) var(--fs-h1) / var(--lh-heading) var(--font-display); /* @kind font */
+  --type-h2: var(--fw-extrabold) var(--fs-h2) / var(--lh-heading) var(--font-display); /* @kind font */
+  --type-h3: var(--fw-bold) var(--fs-h3) / var(--lh-snug) var(--font-display); /* @kind font */
+  --type-h4: var(--fw-semibold) var(--fs-h4) / var(--lh-snug) var(--font-display); /* @kind font */
+  --type-lead: var(--fw-medium) var(--fs-lead) / var(--lh-snug) var(--font-body); /* @kind font */
+  --type-body: var(--fw-medium) var(--fs-body) / var(--lh-body) var(--font-body); /* @kind font */
+  --type-body-sm: var(--fw-medium) var(--fs-body-sm) / var(--lh-body) var(--font-body); /* @kind font */
+  --type-label: var(--fw-semibold) var(--fs-body-sm) / 1.2 var(--font-body); /* @kind font */
+  --type-caption: var(--fw-medium) var(--fs-caption) / var(--lh-snug) var(--font-body); /* @kind font */
+  --type-eyebrow: var(--fw-bold) var(--fs-caption) / 1.2 var(--font-display); /* @kind font */
+
+  --measure-prose: 66ch; /* @kind font */
+  --measure-lead: 46ch; /* @kind font */
+  --measure-display: 22ch; /* @kind font */
+}

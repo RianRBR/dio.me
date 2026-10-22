@@ -1,0 +1,117 @@
+:root {
+  /* ---- Navy (brand core — sampled from the wordmark: #17377A) ---- */
+  --navy-50: #f2f5fb;
+  --navy-100: #e1e8f5;
+  --navy-200: #c2cfe9;
+  --navy-300: #94a9d3;
+  --navy-400: #5f7cb8;
+  --navy-500: #3a5a9e;
+  --navy-600: #24468a;
+  --navy-700: #17377a;
+  --navy-800: #122c61;
+  --navy-900: #0d2047;
+  --navy-950: #081430;
+
+  /* ---- Teal (secondary — "movement / função", used for evidence markers, RTS) ---- */
+  --teal-50: #eaf7f7;
+  --teal-100: #cdeced;
+  --teal-200: #9ddadc;
+  --teal-300: #5fc0c3;
+  --teal-400: #2aa5a9;
+  --teal-500: #0f9c9c;
+  --teal-600: #0b7f82;
+  --teal-700: #0a6669;
+  --teal-800: #084e51;
+
+  /* ---- Amber (highlight — sparingly: awards, titles, "3ª edição") ---- */
+  --amber-50: #fdf6e9;
+  --amber-100: #f9e8c6;
+  --amber-300: #f0c579;
+  --amber-500: #e8a33d;
+  --amber-600: #c9821f;
+  --amber-700: #9a6212;
+
+  /* ---- Neutrals (cool-tinted so they sit under the navy) ---- */
+  --gray-0: #ffffff;
+  --gray-25: #fafbfd;
+  --gray-50: #f5f7fa;
+  --gray-100: #eceff4;
+  --gray-200: #dde2ea;
+  --gray-300: #c4cbd6;
+  --gray-400: #98a2b3;
+  --gray-500: #6b7688;
+  --gray-600: #4d5765;
+  --gray-700: #363e4a;
+  --gray-800: #232935;
+  --gray-900: #12161d;
+
+  /* ---- Status ---- */
+  --green-50: #e9f6ef;
+  --green-500: #128a5e;
+  --green-600: #0e7150;
+  --red-50: #fdecea;
+  --red-500: #b3271b;
+  --red-600: #94190f;
+  --whatsapp: #25d366;
+  --whatsapp-ink: #0b6b39;
+
+  /* ================= Semantic aliases ================= */
+
+  /* Brand */
+  --brand: var(--navy-700);
+  --brand-strong: var(--navy-900);
+  --brand-soft: var(--navy-100);
+  --brand-tint: var(--navy-50);
+  --accent: var(--teal-500);
+  --accent-soft: var(--teal-50);
+  --highlight: var(--amber-500);
+
+  /* Text */
+  --text-title: var(--navy-900);
+  --text-body: var(--gray-700);
+  --text-muted: var(--gray-500);
+  --text-subtle: var(--gray-400);
+  --text-on-brand: var(--gray-0);
+  --text-on-brand-muted: var(--navy-200);
+  --text-link: var(--navy-700);
+  --text-link-hover: var(--teal-600);
+
+  /* Surfaces */
+  --surface-page: var(--gray-0);
+  --surface-alt: var(--gray-50);
+  --surface-card: var(--gray-0);
+  --surface-inset: var(--gray-100);
+  --surface-brand: var(--navy-700);
+  --surface-brand-deep: var(--navy-900);
+  --surface-brand-tint: var(--navy-50);
+  --surface-accent: var(--teal-500);
+  --surface-accent-tint: var(--teal-50);
+
+  /* Borders */
+  --border-subtle: var(--gray-200);
+  --border-default: var(--gray-300);
+  --border-strong: var(--navy-700);
+  --border-on-brand: rgba(255, 255, 255, 0.22);
+
+  /* Interactive */
+  --interactive-bg: var(--navy-700);
+  --interactive-bg-hover: var(--navy-800);
+  --interactive-bg-active: var(--navy-900);
+  --interactive-fg: var(--gray-0);
+  --focus-ring: var(--teal-500);
+
+  /* Status semantics */
+  --success-fg: var(--green-600);
+  --success-bg: var(--green-50);
+  --danger-fg: var(--red-500);
+  --danger-bg: var(--red-50);
+  --warning-fg: var(--amber-700);
+  --warning-bg: var(--amber-50);
+
+  /* Overlays / protection gradients over photography */
+  --overlay-scrim: rgba(8, 20, 48, 0.55);
+  --overlay-protect: linear-gradient(180deg, rgba(8, 20, 48, 0) 0%, rgba(8, 20, 48, 0.72) 100%); /* @kind other */
+  --overlay-protect-left: linear-gradient(90deg, rgba(8, 20, 48, 0.86) 0%, rgba(8, 20, 48, 0.35) 55%, rgba(8, 20, 48, 0) 100%); /* @kind other */
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.55);
+}

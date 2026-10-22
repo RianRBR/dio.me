@@ -1,0 +1,38 @@
+:root {
+  /* 4px base, with a 2px half-step for optical nudges */
+  --space-0: 0;
+  --space-05: 2px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;
+
+  /* Rhythm roles */
+  --gap-inline: var(--space-3);
+  --gap-stack: var(--space-4);
+  --gap-card: var(--space-6);
+  --gap-grid: var(--space-6);
+  --pad-card: var(--space-6);
+  --pad-card-lg: var(--space-8);
+  --pad-section-y: var(--space-24);
+  --pad-section-y-sm: var(--space-16);
+  --pad-gutter: var(--space-6);
+
+  /* Layout */
+  --container-max: 1200px; /* @kind spacing */
+  --container-narrow: 800px; /* @kind spacing */
+  --container-wide: 1440px; /* @kind spacing */
+  --header-h: 76px; /* @kind spacing */
+  --header-h-compact: 62px; /* @kind spacing */
+  --hit-min: 44px; /* @kind spacing */
+}

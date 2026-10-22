@@ -1,0 +1,23 @@
+:root {
+  /* The wordmark is built from very round counters — the system leans generous,
+     never sharp. Pills for actions, soft rectangles for containers. */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  --radius-button: var(--radius-pill);
+  --radius-input: var(--radius-md);
+  --radius-card: var(--radius-lg);
+  --radius-card-lg: var(--radius-2xl);
+  --radius-media: var(--radius-xl);
+  --radius-chip: var(--radius-pill);
+
+  --border-w-hairline: 1px; /* @kind spacing */
+  --border-w-default: 1px; /* @kind spacing */
+  --border-w-emphasis: 2px; /* @kind spacing */
+}

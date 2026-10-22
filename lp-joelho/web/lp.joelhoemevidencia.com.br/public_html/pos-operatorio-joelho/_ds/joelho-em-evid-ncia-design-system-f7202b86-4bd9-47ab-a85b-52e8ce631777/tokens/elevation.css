@@ -1,0 +1,14 @@
+:root {
+  /* Shadows are navy-tinted and low-contrast — the brand is clean and clinical,
+     not "floating cards". Most cards use a border; shadow only on lift/overlay. */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(13, 32, 71, 0.06);
+  --shadow-sm: 0 1px 3px rgba(13, 32, 71, 0.07), 0 1px 2px rgba(13, 32, 71, 0.04);
+  --shadow-md: 0 4px 12px rgba(13, 32, 71, 0.08), 0 1px 3px rgba(13, 32, 71, 0.05);
+  --shadow-lg: 0 12px 32px rgba(13, 32, 71, 0.12), 0 2px 8px rgba(13, 32, 71, 0.06);
+  --shadow-xl: 0 24px 64px rgba(13, 32, 71, 0.18);
+  --shadow-brand: 0 8px 24px rgba(23, 55, 122, 0.22);
+  --shadow-inset-hairline: inset 0 0 0 1px var(--border-subtle);
+  --shadow-focus: 0 0 0 3px rgba(15, 156, 156, 0.35);
+  --blur-glass: saturate(1.4) blur(14px); /* @kind other */
+}
